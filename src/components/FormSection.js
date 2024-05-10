@@ -2,11 +2,23 @@ import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { MdArrowOutward } from "react-icons/md";
 import "./FormSection.css"
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function FormSection() {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1500, 
+            easing: 'ease-in-out', 
+            once: true,
+        });
+    }, []);
     const [formData, setFormData] = useState({
         name: "", email: "", phone: "", companyName: "", msg: ""
     })
+
     function changeHandler(event) {
         setFormData((prevData) => (
             {
@@ -18,20 +30,21 @@ function FormSection() {
     function submitHandler(){
         console.log(formData);
     }
+
     return (
-        <div className="form-sec">
-            <div className="form-text">
+        <div className="form-sec" data-aos="fade-up">
+            <div className="form-text" data-aos="fade-up">
                 <p>GET STARTED WITH US</p>
-                <p className="highlighted-text">
+                <p className="highlighted-text" data-aos="fade-up">
                     Start Conversation To Skyrocket Your Business
                     </p>
                 <p>{"Schedule a free consultation with our experts. Uncover opportunities and take the first step towards digital success"}</p>
 
                 <button >Contact Us <MdArrowOutward /></button>
             </div>
-            <div className="form-card">
-                <div className="form-card-d"><p className="form-card-p">Get A Free Consultation With Marketing Our Expert</p></div>
-                <form className="form-content">
+            <div className="form-card" data-aos="fade-up">
+                <div className="form-card-d" data-aos="fade-up"><p className="form-card-p">Get A Free Consultation With Marketing Our Expert</p></div>
+                <form className="form-content" data-aos="fade-up">
                     <div>
                         <label>
                             <p>Company Name<sup>*</sup></p>

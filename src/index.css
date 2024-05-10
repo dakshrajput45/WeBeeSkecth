@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle, rgba(245,163,163,1) 6%, rgba(249,224,224,1) 69%);
+  background: aliceblue;
   width: 100%;
   line-height: 32px;
   font-weight: 400;
@@ -29,7 +29,7 @@ body {
     flex-direction: row;
     width: 100%;
     height: 107vh;
-    padding: 20px;
+    padding: 100px;
     background-color: aliceblue;
     justify-content: space-between;
   }
@@ -80,9 +80,9 @@ body {
   .left-ban-text button {
     margin: 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
-    background-color: rgb(255, 0, 200);
+    background-color: rgb(0, 33, 65);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -172,113 +172,11 @@ body {
   }
 
   .p-line {
-    border-top: 1px solid rgb(255, 0, 200);
+    border-top: 1px solid rgb(0, 33, 65);
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 60px;
     width: 65%;
-  }
-
-  .small-aboutus {
-    margin: 20px;
-    color: black;
-    padding: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-aboutus {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .right-aboutus {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .right-aboutus p {
-    margin: 0;
-    font-size: 20px;
-    line-height: 1.4;
-    white-space: pre-wrap;
-  }
-
-  .card-aboutus {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  @media screen and (max-width: 760px) {
-    .small-aboutus {
-      flex-direction: column;
-    }
-
-    .left-aboutus {
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    .left-aboutus img{
-      width: 100%;
-    }
-    .right-aboutus {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-      /* Change to 100% for small screens */
-    }
-
-    .right-aboutus p {
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      /* Further reduce font size for very small screens */
-    }
-  }
-
-  /* Media query for large screens */
-  @media screen and (min-width: 1200px) {
-    .small-aboutus {
-      flex-direction: row;
-      /* Change to row for large screens */
-    }
-
-    .left-aboutus {
-      width: 50%;
-      /* Change to 50% for large screens */
-    }
-
-    .right-aboutus {
-      width: 50%;
-      /* Change to 50% for large screens */
-    }
-
-    .right-aboutus p {
-      font-size: 24px;
-      /* Increase font size for large screens */
-    }
-  }
-
-  .card-btn {
-    margin: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: rgb(255, 0, 200);;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
   }
 
   /*---Digital---*/
@@ -286,15 +184,42 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding: 20px;
+    padding: 100px;
+  }
+  .digi-card {
+    padding-right: 100px;
   }
 
+  .digi-card img{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+  }
+  
+  .digi-card p:first-child{
+    font-weight: bold;
+    font-size: large;
+  }
+  .card-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0, 33, 65);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  }
   /*---------our Services------*/
   .our-service {
     display: flex;
     flex-direction: column;
     padding: 100px;
-    background-color: aliceblue;
+    color: white;
+    background-color: rgb(0, 33, 65);
     height: max-content;
     width: 100%;
     justify-content: center;
@@ -335,8 +260,12 @@ body {
       width: 100%;
       display: flex;
       flex-direction: column;
+      padding: 40px;
     }
-
+    
+  .digi-card {
+    padding-right: 40px;
+  }
     .text-service p:nth-of-type(1) {
       font-size: 40px;
       margin: 10px;
@@ -384,7 +313,7 @@ body {
     flex-direction: row;
     align-items: center;
     opacity: 1;
-    z-index: 2;
+    z-index: 10000;
     visibility: visible;
     transform: scaleY(1);
     transition: transform 1.0s ease; 
@@ -406,12 +335,12 @@ body {
     transition: opacity 1.0s ease; 
     display: none;
   }
-  .div-service-e:hover .div-service-img {
+  .div-service-e:hover .div-service-img-e {
     display: flex; 
     flex-direction: row;
     align-items: center;
     opacity: 1;
-    z-index: 2;
+    z-index: 10000;
     visibility: visible;
     transform: scaleY(1);
     transition: transform 1.0s ease;
@@ -429,10 +358,6 @@ body {
     border-radius: 20px;
   }
 
-  .div-service-img p{
-    margin-left:20px;
-    font-size: 15px;
-  }
   .div-service-d:hover .arrow-service{
     transition: opacity 1.0s ease; 
     display: none;
@@ -442,7 +367,7 @@ body {
     flex-direction: row;
     align-items: center;
     opacity: 1;
-    z-index: 2;
+    z-index: 10000;
     visibility: visible;
     transform: scaleY(1);
     transition: transform 1.0s ease;
@@ -460,10 +385,6 @@ body {
     border-radius: 20px;
   }
   
-  .div-service-img p{
-    margin-left:20px;
-    font-size: 15px;
-  }
   .div-service-c:hover .arrow-service{
     transition: transform 1.0s ease; 
     display: none;
@@ -473,7 +394,7 @@ body {
     flex-direction: row;
     align-items: center;
     opacity: 1;
-    z-index: 2;
+    z-index: 10000;
     visibility: visible;
     transform: scaleY(1);
     transition: transform 1.0s ease;
@@ -497,7 +418,7 @@ body {
     opacity: 0;
     visibility: hidden;
     margin-left: 400px;
-    z-index: 2;
+    z-index: 10000;
   }
 
   .div-service-img p{
@@ -513,7 +434,7 @@ body {
     flex-direction: row;
     align-items: center;
     opacity: 1;
-    z-index: 2;
+    z-index: 10000;
     visibility: visible;
     transform: scaleY(1);
     transition: transform 1.0s ease; 
@@ -531,17 +452,7 @@ body {
     border: 5px solid black;
     border-radius: 20px;
   }
-  .div-service-img {
-    opacity: 0;
-    visibility: hidden;
-    margin-left: 400px;
-    z-index: 2;
-  }
 
-  .div-service-img p{
-    margin-left:20px;
-    font-size: 15px;
-  }
   .div-service-b:hover .arrow-service{
     transition: opacity 1.0s ease; 
     display: none;
@@ -551,18 +462,20 @@ body {
     flex-direction: row;
     align-items: center;
     opacity: 1;
-    z-index: 2;
+    z-index: 10000;
     visibility: visible;
     transform: scaleY(1);
     transition: transform 1.0s ease;
   }
   /*---------------Process------------*/
   
+  .process {
+    padding: 100px;
+  }
   .process-text {
     display: flex;
     color: black;
     justify-content: space-between;
-    padding: 20px;
   }
 
   .process-text p:last-child{
@@ -577,7 +490,6 @@ body {
   }
   
   .process-div {
-    padding: 10px;
     margin-top: 10px;
     margin-right: 13px;
     font-size: 25px;
@@ -594,14 +506,65 @@ body {
     color: #888;
     margin-top: 10px;
   }
+
+  .data-card-p {
+    display: flex;
+    flex-direction: row;
+  }
   
+  .p-card {
+  padding-right: 40px;
+  }
+
+  .p-card img{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: aliceblue;
+  }
+  @media screen and (max-width: 500px) {
+    .process {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    .process-text {
+      margin-bottom: 20px;
+      margin-right: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   /*--------------TeamSlides-------*/
+  .team-card {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .team-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team-text p:nth-of-type(1){
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .team-text p:nth-of-type(2){
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px;
+  }
   .four-card-container {
     display: flex;
     color: black;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px;
+    padding-top:40px;
   }
 
   .f-card-team {
@@ -634,18 +597,42 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
+    margin-left:30px;
   }
   
   .two-btn-container button{
-    margin-right: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 40px;
   }
 
   @media screen and (max-width: 500px) {
 
+    .team-card {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .team-text p:nth-of-type(1){
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    .team-text p:nth-of-type(2){
+      font-size: 35px;
+      font-weight: bold;
+      margin: 20px;
+    }
+
     .four-card-container {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
+
 
     .s-card-team {
       display: none;
@@ -667,16 +654,50 @@ body {
       flex-direction: row;
     }
     .our-service {
-      padding: 10px;
+      padding: 40px;
     }
+    
     .div-service-img{
       display: none;
     }
+
+    .div-service-img img{
+      display: none;
+    }
+    .div-service-img p{
+      display: none;
+    }
+
+    .div-service-f {
+      height: max-content;
+    }
+
+    .div-service-e {
+      height: max-content;
+    }
+
+    .div-service-a {
+      height: max-content;
+    }
+
+    .div-service-b {
+      height: max-content;
+    }
+
+    .div-service-c {
+      height: max-content;
+    }
+    
     .t-card-team{
       display: none;
     }
 
     .l-card-team {
       display: none;
+    }
+
+    .data-card-p {
+      display: flex;
+      flex-direction: column;
     }
   }

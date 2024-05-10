@@ -2,7 +2,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 function CardProcess ({ProcessCardData}) {
     return (
-        <div>
+        <div className="p-card" data-aos="fade-up">
             <div>
                 <img src={ProcessCardData.img} alt="yesss"/>
             </div>

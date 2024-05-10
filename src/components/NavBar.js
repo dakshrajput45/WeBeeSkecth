@@ -1,75 +1,123 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
-  FaYoutubeSquare,
+  FaLinkedinIn,
 } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { useNavigate } from 'react-router-dom';
-
-
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate=useNavigate();
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
-  return (
-    <>
-      <nav className="main-nav">
-        {/* 1st logo part  */}
-        <div className="logo">
-          <img src="" alt="logo"></img>
-        </div>
-        {/* 2nd menu part  */}
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }>
-          <ul>
-            <button onClick={()=>{navigate("/")}}>Home</button>
-            <button onClick={()=>{navigate("/AboutUs")}}>AboutUs</button>
-            <button onClick={()=>{navigate("/Services")}}>Services</button>
-            <button onClick={()=>{navigate("/Team")}}>Team</button>
-            <button onClick={()=>{navigate("/Blog")}}>Blog</button>
-            <button onClick={()=>{navigate("/contact")}}>contact</button>
-          </ul>
-        </div>
+  const navigate = useNavigate();
+  const [active, setActive] = useState("nav__menu");
+  const [icon, setIcon] = useState("nav__toggler");
+  const navToggle = () => {
+    if (active === "nav__menu") {
+      setActive("nav__menu nav__active");
+    } else setActive("nav__menu");
 
+    // Icon Toggler
+    if (icon === "nav__toggler") {
+      setIcon("nav__toggler toggle");
+    } else setIcon("nav__toggler");
+  };
+  return (
+    <nav className="nav">
+      <div className="nav__brand">
+        <img
+          src=""
+          alt="logo"
+          onClick={() => {
+            navigate("/");
+          }}
+        ></img>
+      </div>
+
+      <ul className={active}>
+        <div className="btn-nav">
+          <li className="nav__item">
+            <button
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Home
+            </button>
+          </li>
+          <li className="nav__item">
+            <button
+              onClick={() => {
+                navigate("/AboutUs");
+              }}
+            >
+              AboutUs
+            </button>
+          </li>
+          <li className="nav__item">
+            <button
+              onClick={() => {
+                navigate("/Services");
+              }}
+            >
+              Services
+            </button>
+          </li>
+          <li className="nav__item"></li>
+          <li className="nav__item">
+            <button
+              onClick={() => {
+                navigate("/Team");
+              }}
+            >
+              Team
+            </button>
+          </li>
+          <li className="nav__item">
+            <button
+              onClick={() => {
+                navigate("/Blog");
+              }}
+            >
+              Blog
+            </button>
+          </li>
+          <li className="nav__item">
+            <button
+              onClick={() => {
+                navigate("/contact");
+              }}
+            >
+              contact
+            </button>
+          </li>
+        </div>
         {/* 3rd social media links */}
         <div className="social-media">
           <ul className="social-media-desktop">
             <li>
-              <a
-                href=""
-                >
+              <a href="https://www.facebook.com/webeesketch">
                 <FaFacebookSquare className="facebook" />
               </a>
             </li>
             <li>
-              <a
-                href=""
-                >
+              <a href="https://www.instagram.com/webeesketch">
                 <FaInstagramSquare className="instagram" />
               </a>
             </li>
             <li>
-              <a
-                href=""
-                >
-                <FaYoutubeSquare className="youtube" />
+              <a href="https://www.linkedin.com/company/webeesketch">
+                <FaLinkedinIn />
               </a>
             </li>
           </ul>
-
-          {/* hamburget menu start  */}
-          <div className="hamburger-menu">
-            <button onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </button>
-          </div>
         </div>
-      </nav>
-    </>
+      </ul>
+      <div onClick={navToggle} className={icon}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
   );
 };
 

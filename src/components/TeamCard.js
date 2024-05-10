@@ -3,7 +3,6 @@ import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { useState } from "react";
 
 function TeamCard({ TeamData }) {
-    console.log(TeamData);
     const [index, setIndex] = useState(0);
     const len = TeamData.length;
 
@@ -19,21 +18,21 @@ function TeamCard({ TeamData }) {
 
     return (
         <div>
-            <div className="four-card-container">
-                <div className="f-card-team">
+            <div className="four-card-container" data-aos="fade-up">
+                <div className="f-card-team" data-aos="fade-up">
                     <PersonalCard Data={TeamData[((index) % len)]} />
                 </div>
-                <div className="s-card-team">
+                <div className="s-card-team" data-aos="fade-up">
                     <PersonalCard Data={TeamData[(index + 1) % len]} />
                 </div>
-                <div className="t-card-team">
+                <div className="t-card-team" data-aos="fade-up">
                     <PersonalCard Data={TeamData[(index + 2) % len]} />
                 </div>
-                <div className="l-card-team">
+                <div className="l-card-team"data-aos="fade-up">
                     <PersonalCard Data={TeamData[(index + 3) % len]} />
                 </div>
             </div>
-            <div className="two-btn-container">
+            <div className="two-btn-container" data-aos="fade-up">
                 <button className="btn" onClick={leftShiftHandler}>
                     <FaArrowLeftLong />
                 </button>
