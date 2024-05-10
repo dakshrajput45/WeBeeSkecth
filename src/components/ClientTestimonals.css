@@ -158,7 +158,7 @@
         padding: 10px;
     } 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .client-test {
         display: flex;
         flex-direction: column;
@@ -258,7 +258,7 @@
     }
     
     .try-btn {
-        background-color: rgb(0, 33, 65);;
+        background-color: rgb(0, 33, 65);
         color: white;
         border: none;
         padding: 10px 20px;

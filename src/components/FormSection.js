@@ -16,7 +16,7 @@ function FormSection() {
         });
     }, []);
     const [formData, setFormData] = useState({
-        name: "", email: "", phone: "", companyName: "", msg: ""
+        name: "", email: "", phone: "", companyName: "", message: ""
     })
 
     function changeHandler(event) {
@@ -44,7 +44,10 @@ function FormSection() {
             </div>
             <div className="form-card" data-aos="fade-up">
                 <div className="form-card-d" data-aos="fade-up"><p className="form-card-p">Get A Free Consultation With Marketing Our Expert</p></div>
-                <form className="form-content" data-aos="fade-up">
+                <form 
+                className="form-content" data-aos="fade-up"
+                action="https://formspree.io/f/xnqerjzz"
+                method="POST">
                     <div>
                         <label>
                             <p>Company Name<sup>*</sup></p>
@@ -95,12 +98,12 @@ function FormSection() {
                             <input
                                 required
                                 type="text"
-                                name="msg"
+                                name="message"
                                 onChange={changeHandler}
                                 placeholder="Enter You Message"
                                 value={formData.msg} />
                         </label>
-                        <button onClick={() => { submitHandler(); toast.success("Message Sent") }}>Submit <MdArrowOutward /></button>
+                        <button onClick={() => { toast.success("Message Sent");submitHandler() }}>Submit <MdArrowOutward /></button>
                     </div>
                 </form>
             </div>
