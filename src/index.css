@@ -335,7 +335,7 @@ body {
     transition: opacity 1.0s ease; 
     display: none;
   }
-  .div-service-e:hover .div-service-img-e {
+  .div-service-e:hover .div-service-img {
     display: flex; 
     flex-direction: row;
     align-items: center;
