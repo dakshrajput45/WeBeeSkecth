@@ -19,7 +19,7 @@ function TeamSlides(){
             <div className="team-text" data-aos="fade-up">
                 <p>EXCEPTIONAL TEAM</p>
                 <p>Meet With Our Team</p>
-                <p>Discover the driving force behind Marketi. Working collaboratively to deliver</p>
+                <p>Discover the driving force behind Marketi. <span className="highlight"> Working collaboratively </span>to deliver</p>
                 <p>innovative digital marketing solutions that elevate your brand.</p>
             </div>
             <div>

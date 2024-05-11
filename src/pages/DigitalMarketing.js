@@ -22,7 +22,7 @@ function DigitalMarketing() {
                             {"The Digital\nMarketing Agency\nFor Higher ROI"}
                         </p>
                         <p>Choose success with our digital marketing agency, dedicated to delivering
-                            higher ROI that propels your business to new heights.
+                            <span className="highlight"> higher ROI</span> that propels your business to new heights.
                         </p>
                         <div>
                             <button className="try-btn">Try it Now <SlArrowRightCircle /></button>

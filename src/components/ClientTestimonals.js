@@ -37,7 +37,7 @@ function ClientTestimonals() {
                 <p>Client's Speeches
                     About Marketi</p>
                 <p>Our clients share their experiences with Marketi, expressing how our
-                    digital marketing expertise has not only met but exceeded their
+                    digital marketing <span className="highlight"> expertise has not only </span>met but exceeded their
                     expectations, fostering success and growth for their businesses.</p>
                 <div><button className="try-btn" data-aos="fade-up">Try it Now <SlArrowRightCircle /></button></div>
 

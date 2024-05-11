@@ -1,0 +1,17 @@
+.about-ban {
+    padding: 22vh;
+    background: var(--coral);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.about-ban p{
+    font-size: larger;
+}
+
+.about-ban-text {
+    padding-left: 30%;
+    padding-right: 30%;
+}

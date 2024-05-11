@@ -1,13 +1,13 @@
 .form-sec {
   display: flex;
-  justify-content: space-between; /* Adjusts spacing between the two main sections */
-  padding: 50px 100px; /* Balanced padding on all sides */
-  background-color: #f7f7f7; /* Adding a light background for contrast */
+  justify-content: space-between; 
+  padding: 50px 100px; 
+  background-color:  rgb(0, 33, 65); 
 }
 
 .form-text {
   flex: 0.4;
-  color: #333;
+  color: white;
   margin-right: 50px;
   margin-bottom: 20px;
   margin-top: 30px;
@@ -20,7 +20,7 @@
 .form-text .highlighted-text {
   font-weight: bold;
   font-size: 30px;
-  color: #ff5733;
+  color:  var(--coral);
 }
 
 .form-text p:nth-of-type(3) {
@@ -30,19 +30,19 @@
 }
 
 .form-text button {
-  background-color: rgb(0, 33, 65);
-  color: white;
+  background-color: aliceblue;
+  margin-top: 20px;
+  color:  rgb(0, 33, 65);
   border: none;
   padding: 20px 30px;
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
-  display: flex;
-  align-items: center; /* Aligns the icon with text */
+  align-items: center; 
 }
 
 .form-text button:hover {
-  background-color: #555; /* Darkens on hover */
+  background-color:  var(--dark-grey); 
 }
 
 .form-card {
@@ -104,7 +104,7 @@
 }
 
 .form-content button:hover {
-  background-color: #555;
+  background-color:  var(--dark-grey);
 }
 
 .form-content button svg {
@@ -116,12 +116,12 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    background-color: #f7f7f7; /* Adding a light background for contrast */
+    background-color:  --dark-blue; 
   }
 
   .form-text {
     flex: 0.4;
-    color: #333;
+    color: var(--white);
     margin-right: 10px;
     margin-bottom: 20px;
     margin-top: 30px;
@@ -134,7 +134,7 @@
   .form-text .highlighted-text {
     font-weight: bold;
     font-size: 30px;
-    color: #ff5733;
+    color:  var(--coral);
   }
 
   .form-text p:nth-of-type(3) {
@@ -149,7 +149,7 @@
   }
 
   .form-text button:hover {
-    background-color: #555; /* Darkens on hover */
+    background-color:  var(--dark-grey); /* Darkens on hover */
   }
 
   .form-card {
@@ -186,7 +186,7 @@
   }
 
   .form-content button:hover {
-    background-color: #555;
+    background-color:  var(--dark-grey);
   }
 
   .form-content button svg {

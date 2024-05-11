@@ -20,8 +20,8 @@ function SmallAboutUs () {
             </div>
             <div className="right-aboutus" data-aos="fade-up">
                 <p>{"About Us"}</p>
-                <p className="two-p-aboutus"  data-aos="fade-up">{"Why Webeesketch Should\nBe Your Top Choice"}</p>
-                <p>{"Choose Marketi for unparalleled digital success-where expertise,innovation, and strategic brilliance converge to elevate your business to new heights."}</p>
+                <p className="two-p-aboutus"  data-aos="fade-up">Why <span className="highlight"> Webeesketch </span>Should Be Your Top Choice</p>
+                <p>Choose Marketi for unparalleled digital <span className="highlight"> success-where expertise,innovation</span>, and strategic brilliance converge to elevate your business to new heights.</p>
                 <div className="card-aboutus"  data-aos="fade-up">
                     <div>
                         <p>12+</p>

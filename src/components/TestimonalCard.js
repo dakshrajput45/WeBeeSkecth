@@ -5,7 +5,7 @@ function TestimonalCard({ TeamData }) {
     return (
         <div className="testi-card" data-aos="fade-up">
             <div className="card-text" data-aos="fade-up">
-                <p>{"Working With Marketi has been a right and good investment for our business. And Thier target campaigns and data-driven approach have not noly increased our Roi but also provide valuable insights for future growth."}</p>
+                <p>Working With Marketi has been a right and good investment for our business. <span className="highlight"> And Thier target campaigns</span> and data-driven approach have not noly increased our Roi but also provide valuable insights for future growth.</p>
             </div>
             <div className="black-line">
 

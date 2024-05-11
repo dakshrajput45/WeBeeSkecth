@@ -18,12 +18,12 @@ function Process() {
         <div className="process" data-aos="fade-up">
             <div className="process-text" data-aos="fade-up">
                 <div className="process-div-text">
-                    <p>HOW DO WE WORK</p>
+                    <p>HOW DO WE <span className="highlight"> WORK </span></p>
                     <p>Our Work Process</p>
                 </div>
                 <div className="process-div">
                     <div>Discover a spectrum of cutting-edge digital marketing services </div>
-                    <div>tailored to elevate your online presence, drive engagement.</div>
+                    <div>tailored to elevate your online presence,<span className="highlight">  drive engagement</span>.</div>
                 </div>
             </div>
             <div className="data-card-p" data-aos="fade-up">
