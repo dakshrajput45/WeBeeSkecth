@@ -43,7 +43,7 @@ function FormSection() {
                 <button >Contact Us <MdArrowOutward /></button>
             </div>
             <div className="form-card" data-aos="fade-up">
-                <div className="form-card-d" data-aos="fade-up"><p className="form-card-p">Get A Free Consultation With Marketing Our Expert</p></div>
+                <div className="form-card-d" data-aos="fade-up"><p className="form-card-p">Get A Free Consultation With Our Marketing Expert</p></div>
                 <form 
                 className="form-content" data-aos="fade-up"
                 action="https://formspree.io/f/xnqerjzz"

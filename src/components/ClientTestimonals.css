@@ -48,7 +48,7 @@
 
 
 .card {
-    background-color: white;
+    background-color: aliceblue;
     border-radius: 20px;
     
 }
@@ -125,7 +125,7 @@
     background-color: #0056b3;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     .client-test {
         display: flex;
         flex-direction: row;

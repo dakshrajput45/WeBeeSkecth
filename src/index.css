@@ -274,7 +274,7 @@ body {
   padding: 5px;
   background-color: var(--alice-blue);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
   .process {
     padding: 40px;
     display: flex;
@@ -290,6 +290,7 @@ body {
 /*--------------TeamSlides-------*/
 .team-card {
   padding-left: 100px;
+  padding-top: 40px;
   padding-right: 100px;
 }
 
@@ -397,7 +398,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .digi-card {
     padding-right: 40px;
   }
@@ -415,12 +416,20 @@ body {
     display: none;
   }
 
+  .data-card {
+    display: flex;
+    flex-direction: column;
+  }
   .data-card-p {
     display: flex;
     flex-direction: column;
   }
 }
-
+@media screen and (max-width: 1400px) {
+  .l-card-team {
+    display: none;
+  }
+}
 /**********************ABOUTUS***************/
 
 .first-about {
@@ -469,4 +478,17 @@ body {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+}
+
+/**************Serviecs***********/
+
+.first-service {
+  display: flex;
+  flex-direction: row;
+}
+.service-left {
+  width: 30%;
+}
+.service-div p{
+  color: var(--coral);
 }

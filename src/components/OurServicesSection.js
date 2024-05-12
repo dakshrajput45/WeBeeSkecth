@@ -50,7 +50,9 @@ function OurServicesSections() {
       </div>
       <p className="p-our-line"></p>
       <div className="div-service-a" data-aos="fade-up">
-        <p>{"Search Engine Marketing"}</p>
+        <div>
+          <p>{"Search Engine Marketing"}</p>
+        </div>
         <div className="div-service-img">
           <img
             src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image2.png"
