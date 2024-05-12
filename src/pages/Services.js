@@ -1,8 +1,15 @@
+import BannerSection from "../components/BannerSection"
+import BannerData from "../Banner-data"
+
 function Services() {
     return(
         <div>
-            <br></br>
-            <p>Nothing</p>
+            <div>
+                <BannerSection props={BannerData[1]}/>
+            </div>
+            <div>
+                
+            </div>
         </div>
     );
 }
