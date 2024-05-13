@@ -5,7 +5,7 @@
     padding: auto;
     display: flex;
     z-index: -1;
-    gap: 100px;
+    gap: 90px;
     flex-direction: row;
     align-items: center;
   }
