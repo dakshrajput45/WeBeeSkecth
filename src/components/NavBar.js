@@ -24,74 +24,100 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="nav__brand">
-        <img
-          src=""
-          alt="logo"
-          onClick={() => {
-            navigate("/");
-          }}
-        ></img>
-      </div>
-
-      <ul className={active}>
-        <div className="btn-nav">
-          <li className="nav__item">
-            <button
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Home
-            </button>
-          </li>
-          <li className="nav__item">
-            <button
-              onClick={() => {
-                navigate("/AboutUs");
-              }}
-            >
-              AboutUs
-            </button>
-          </li>
-          <li className="nav__item">
-            <button
-              onClick={() => {
-                navigate("/Services");
-              }}
-            >
-              Services
-            </button>
-          </li>
-          <li className="nav__item"></li>
-          <li className="nav__item">
-            <button
-              onClick={() => {
-                navigate("/Team");
-              }}
-            >
-              Team
-            </button>
-          </li>
-          <li className="nav__item">
-            <button
-              onClick={() => {
-                navigate("/Blog");
-              }}
-            >
-              Blog
-            </button>
-          </li>
-          <li className="nav__item">
-            <button
-              onClick={() => {
-                navigate("/contact");
-              }}
-            >
-              contact
-            </button>
-          </li>
+        <div className="logo">
+          <img
+            src=""
+            alt="logo"
+            onClick={() => {
+              navigate("/");
+            }}
+          ></img>
         </div>
-        {/* 3rd social media links */}
+        <ul className={active}>
+          <div className="btn-nav">
+            <li className="nav__item">
+              <button
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                Home
+              </button>
+            </li>
+            <li className="nav__item">
+              <button
+                onClick={() => {
+                  navigate("/AboutUs");
+                }}
+              >
+                AboutUs
+              </button>
+            </li>
+            <li className="nav__item">
+              <button
+                onClick={() => {
+                  navigate("/Services");
+                }}
+              >
+                Services
+              </button>
+            </li>
+            <li className="nav__item">
+              <button
+                onClick={() => {
+                  navigate("/Blog");
+                }}
+              >
+                Blog
+              </button>
+            </li>
+            <li className="nav__item">
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                }}
+              >
+                contact
+              </button>
+            </li>
+            <div className="info-container">
+              <div className="info-nav">
+                <p>+91934732XXXX</p>
+                <p>Emailexample@gmail.com</p>
+              </div>
+              <div className="social-media">
+                <ul className="social-media-desktop">
+                  <li>
+                    <a href="https://www.facebook.com/webeesketch">
+                      <FaFacebookSquare className="facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/webeesketch">
+                      <FaInstagramSquare className="instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/webeesketch">
+                      <FaLinkedinIn />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <div onClick={navToggle} className={icon}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+      </div>
+      <div className="top-nav">
+        <div className="info-nav">
+          <p>+91 934732XXXX</p>
+          <p>Emailexample@gmail.com</p>
+        </div>
         <div className="social-media">
           <ul className="social-media-desktop">
             <li>
@@ -111,11 +137,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </ul>
-      <div onClick={navToggle} className={icon}>
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
       </div>
     </nav>
   );
