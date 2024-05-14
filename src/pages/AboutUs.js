@@ -1,6 +1,6 @@
 import BannerSection from "../components/BannerSection";
 import BannerData from "../Banner-data.js";
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward,MdArrowForward } from "react-icons/md";
 import SmallAboutUs from "../components/SmallAboutUs.js";
 import CardDigital from "../components/CardDigital.js";
 import DigitalCardData from "../DigitalCard-Data.js";
@@ -8,8 +8,11 @@ import TeamSlides from "../components/TeamSlides.js";
 import ClientTestimonals from "../components/ClientTestimonals.js";
 import FormSection from "../components/FormSection.js";
 import Footer from "../components/Footer.js";
+import { useState } from "react";
 
 function AboutUs() {
+  const [hovered,setHovered]= useState();
+  const [hover,setHover] =useState();
   console.log(BannerData[0]);
   return (
     <div>
@@ -33,9 +36,13 @@ function AboutUs() {
               Our goal is to boost your online visibility and engagement, drive
               organic traffic, and ultimately, maximize your digital success.
             </p>
-            <button>
-              Learn More <MdArrowOutward />
-            </button>
+            <button
+            className="explore-btn"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            Learn More {hovered ? <MdArrowForward /> : <MdArrowOutward />}
+          </button>
           </div>
           <div>
             <p>Our Story</p>
@@ -44,9 +51,13 @@ function AboutUs() {
               regardless of size or industry, deserves a tailored approach to
               marketing.
             </p>
-            <button>
-              Learn More <MdArrowOutward />
-            </button>
+            <button
+            className="explore-btn"
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            Learn More {hover ? <MdArrowForward /> : <MdArrowOutward />}
+          </button>
           </div>
         </div>
       </div>
