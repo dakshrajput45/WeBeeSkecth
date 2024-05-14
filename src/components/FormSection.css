@@ -1,14 +1,14 @@
 .form-sec {
   display: flex;
   justify-content: center;
-  gap: 320px;
+  gap: 150px;
   padding: 50px 100px; 
   background-color:  rgb(0, 33, 65); 
 }
 
 .form-text {
   display: flex;
-  width: 60%;
+  width: 200vh;
   flex-direction: column;
   color: white;
   margin-bottom: 20px;
@@ -26,7 +26,7 @@
 }
 
 .form-text p:nth-of-type(3) {
-  padding-right: 50px;
+  padding-right: 20px;
   margin-top: 10px;
   font-size: 20px;
 }
@@ -62,7 +62,7 @@
 }
 
 .form-card {
-  width: 35%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   background-color: aliceblue;
@@ -97,7 +97,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 15px;
-  width: 250px;
+  width: 300px;
 }
 
 .form-content input:focus {
@@ -191,9 +191,41 @@
     width: 60%;
     align-self: center;
   }
+  .form-card input {
+    width:280px;
+  }
 }
 
-@media screen and (max-width: 620px) { 
+@media screen and (max-width: 700px) { 
+  .form-sec {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 40px;
+    gap:0px;
+    background-color:  --dark-blue; 
+  }
+
+  .form-text {
+    width: 100%;
+    color: var(--white);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .form-card {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    width: 70%;
+    align-self: center;
+  }
+
+  .form-card input{
+    width: 250px;
+  }
+}
+@media screen and (max-width: 500px) { 
   .form-sec {
     display: flex;
     flex-direction: column;
@@ -217,4 +249,9 @@
     width: 100%;
     align-self: center;
   }
+
+  .form-card input{
+    width: 200px;
+  }
+  
 }
