@@ -2,6 +2,7 @@ import "./SmallAboutUs.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import img from "../images/about-image.png"
 
 function SmallAboutUs () {
 
@@ -16,7 +17,7 @@ function SmallAboutUs () {
     return (
         <div className="small-aboutus" data-aos="fade-up">
             <div className="left-aboutus" data-aos="fade-up">
-            <img src="https://marketi-html.vercel.app/marketi-demo/assets/images/about/about-image.png" alt="yes"/>
+            <img src={img} alt="yes"/>
             </div>
             <div className="right-aboutus" data-aos="fade-up">
                 <p>{"About Us"}</p>
