@@ -80,7 +80,7 @@ const Navbar = () => {
                 contact
               </button>
             </li>
-            <div className="info-container">
+            <div className="info-contain">
               <div className="info-nav">
                 <p>+91934732XXXX</p>
                 <p>Emailexample@gmail.com</p>

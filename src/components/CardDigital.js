@@ -1,5 +1,5 @@
-import { MdArrowOutward } from "react-icons/md";
-import { useEffect } from "react";
+import { MdArrowOutward,MdArrowForward } from "react-icons/md";
+import { useEffect,useState } from "react";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,6 +11,8 @@ function CardDigital({DigitalCardData}) {
             once: true,
         });
     }, []);
+    
+    const [hovered, setHovered] = useState(false);
     return(
         <div className="digi-card" data-aos="fade-up">
             <div>
@@ -21,7 +23,12 @@ function CardDigital({DigitalCardData}) {
                 <p>{DigitalCardData.desc}</p>
             </div>
             <div>
-                <button className="card-btn">Explore More <MdArrowOutward /></button>
+            <button className="explore-btn"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+              >
+                Explore More {hovered ? <MdArrowForward /> : <MdArrowOutward />}
+              </button>
             </div>
         </div>
     );

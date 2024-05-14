@@ -7,19 +7,21 @@
     z-index: -1;
     gap: 90px;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
 
   .left-aboutus {
     display: flex;
-    width: 50%;
+    width: 40%;
+    padding-left: 100px;
     justify-content: center;
     align-items: center;
   }
 
   .right-aboutus {
     display: flex;
-    padding-right: 80px;
+    padding-left: 100px;
     flex-direction: column;
     width: 50%;
     justify-content: center;
@@ -83,7 +85,7 @@
     .right-aboutus {
       margin-top: 20px;
       display: flex;
-      padding-right:40px;
+      padding-left: 0px;
       align-items: center;
       justify-content: center;
       text-align: center;

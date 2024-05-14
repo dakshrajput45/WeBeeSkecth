@@ -2,8 +2,6 @@
 import "./ClientTestimonals.css";
 
 function PersonalCard({Data}) {
-    console.log("My Image");
-    console.log(Data);
     
     return (
         <div>

@@ -84,6 +84,24 @@ body {
   margin-bottom: 15px;
 }
 
+.explore-btn{
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.explore-btn:hover {
+  transform: scale(1.05);
+}
+
 .left-ban-text button {
   margin: 5px;
   padding: 10px 20px;
@@ -95,6 +113,11 @@ body {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  transition: transform 0.3s ease; 
+}
+
+.left-ban-text button:hover {
+  transform: scale(1.05);
 }
 
 .right-ban {
