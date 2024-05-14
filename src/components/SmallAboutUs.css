@@ -5,7 +5,7 @@
     padding: auto;
     display: flex;
     z-index: -1;
-    gap: 90px;
+    gap: 50px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
