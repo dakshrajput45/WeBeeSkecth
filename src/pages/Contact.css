@@ -172,7 +172,7 @@ background-color: var(--dark-blue);
     transform: translate(-50%, -50%);
   }
   
-.wrapper a{
+.wrapper button{
     display: block;
     padding: 7px 15px;
     border: none;
@@ -184,7 +184,7 @@ background-color: var(--dark-blue);
     position: relative;
   }
   
-  .wrapper a span {
+  .wrapper button span {
     position: relative;
     color: coral;
     z-index: +1;
@@ -203,11 +203,11 @@ background-color: var(--dark-blue);
     transition: all .5s;
   }
   
-  .wrapper a:hover{
+  .wrapper button:hover{
     color: var(white);
   }
   
-  .wrapper a:hover:after{
+  .wrapper button:hover:after{
     width: 100%;
   }
 
