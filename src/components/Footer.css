@@ -129,7 +129,7 @@
     color: #ff5733;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     .footer {
         display: flex; 
         flex-direction: column;

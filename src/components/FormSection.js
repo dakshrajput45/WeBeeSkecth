@@ -31,7 +31,7 @@ function FormSection() {
   }
 
   const [hovered, setHovered] = useState(false);
-  const [hover,setHover] = useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <div className="form-sec" data-aos="fade-up">
       <div className="form-text" data-aos="fade-up">
@@ -54,9 +54,10 @@ function FormSection() {
       </div>
       <div className="form-card" data-aos="fade-up">
         <div className="form-card-d" data-aos="fade-up">
-          <p className="form-card-p">
-            Get A Free Consultation With Our Marketing Expert
-          </p>
+          <div className="form-card-p">
+            <p>Get A Free Consultation </p>
+            <p>With Our Marketing Expert</p>
+          </div>
         </div>
         <form
           className="form-content"
@@ -132,15 +133,15 @@ function FormSection() {
                 value={formData.msg}
               />
             </label>
-            <button
-              className="explore-btn"
-              onClick={submitHandler}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-            >
-              Submit {hovered ? <MdArrowForward /> : <MdArrowOutward />}
-            </button>
           </div>
+          <button
+            className="explore-btn"
+            onClick={submitHandler}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            Submit {hovered ? <MdArrowForward /> : <MdArrowOutward />}
+          </button>
         </form>
       </div>
     </div>

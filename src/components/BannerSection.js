@@ -1,7 +1,7 @@
 import "./BannerSection.css"
 
 function BannerSection ({props}) {
-    console.log(props.text);
+    console.log(props.title);
     return(
         <div className="about-ban">
             <div>
