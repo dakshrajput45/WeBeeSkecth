@@ -170,7 +170,16 @@
         font-size: 20px;
         font-weight: 200;
         padding: 10px;
-    } 
+    }
+    .info-container{
+        flex-direction: column !important;
+        align-items: start;
+    }
+    
+    .star {
+        margin-top: 10px;
+        font-size: large;
+    }
 }
 @media screen and (max-width: 600px) {
     .client-test {
