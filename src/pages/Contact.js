@@ -196,9 +196,9 @@ function Contact() {
         </div>
         <div className="contact-btn">
           <div class="wrapper">
-            <a href="#">
+            <button>
               <span>Get Started <MdArrowForward/></span>
-            </a>
+            </button>
           </div>
           <button
             className="explore-btn"
