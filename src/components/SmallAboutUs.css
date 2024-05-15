@@ -3,7 +3,6 @@
     padding-left: 100px;
     padding-right: 100px;
     color: black;
-    padding: auto;
     display: flex;
     z-index: -1;
     flex-direction: row;
@@ -11,6 +10,9 @@
     align-items: center;
   }
   
+  .left-img-container {
+    width: 100%;
+  }
   .left-aboutus img {
     width: 100%;
     z-index: -1;
