@@ -17,7 +17,9 @@ function SmallAboutUs () {
     return (
         <div className="small-aboutus" data-aos="fade-up">
             <div className="left-aboutus" data-aos="fade-up">
-            <img src={img} alt="yes"/>
+            <div className="left-img-container">
+                <img src={img} alt="yes"/>
+            </div>
             </div>
             <div className="right-aboutus" data-aos="fade-up">
                 <p>{"About Us"}</p>
