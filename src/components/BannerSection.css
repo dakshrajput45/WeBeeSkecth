@@ -1,0 +1,32 @@
+.about-ban {
+    background: var(--coral);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.about-ban p{
+    font-size: larger;
+}
+
+.about-ban-text {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+@media screen and (max-width:900px) {
+    .about-ban-text {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-ban-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
