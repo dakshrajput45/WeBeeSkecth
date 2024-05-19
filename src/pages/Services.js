@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import BannerSection from "../components/BannerSection";
 import BannerData from "../Banner-data";
 import { useState } from "react";
@@ -57,3 +58,22 @@ function Services() {
 }
 
 export default Services;
+=======
+import BannerSection from "../components/BannerSection"
+import BannerData from "../Banner-data"
+
+function Services() {
+    return(
+        <div>
+            <div>
+                <BannerSection props={BannerData[1]}/>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    );
+}
+
+export default Services;
+>>>>>>> cccd92f208d4dc908dd42375c67802f7b8017632
