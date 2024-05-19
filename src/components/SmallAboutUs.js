@@ -1,4 +1,4 @@
-import "./SmallAboutUs.css";
+import "../Css/SmallAboutUs.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

@@ -1,5 +1,5 @@
 import BannerSection from "../components/BannerSection";
-import BannerData from "../Banner-data";
+import BannerData from "../Data/Banner-data";
 import { BsChatRightText } from "react-icons/bs";
 import { MdAddCall } from "react-icons/md";
 import { CiMap } from "react-icons/ci";
@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 import { MdArrowOutward, MdArrowForward } from "react-icons/md";
 import Button from "@mui/material/Button";
 import Form from "../components/Form";
-import "./Contact.css";
+import "../Css/Contact.css";
 
 function Contact() {
   useEffect(() => {
@@ -80,7 +80,7 @@ function Contact() {
       </div>
       <div className="map-form">
         <div className="map"></div>
-        <div className="contact-form-card" data-aos="fade-up">
+        <div data-aos="fade-up">
           <Form />
         </div>
       </div>

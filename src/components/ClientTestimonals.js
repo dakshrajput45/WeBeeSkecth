@@ -1,9 +1,9 @@
 import { useState } from "react";
-import TeamData from "../TeamData";
+import TeamData from "../Data/TeamData";
 import TestimonalCard from "./TestimonalCard";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { SlArrowRightCircle } from "react-icons/sl";
-import "./ClientTestimonals.css";
+import "../Css/ClientTestimonals.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";

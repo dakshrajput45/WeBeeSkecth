@@ -1,4 +1,4 @@
-import "./ClientTestimonals.css";
+import "../Css/ClientTestimonals.css";
 import { PiStarFill } from "react-icons/pi";
 
 function TestimonalCard({ TeamData }) {

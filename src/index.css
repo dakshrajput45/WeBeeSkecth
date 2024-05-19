@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 * {
   margin: 0;
@@ -20,7 +25,7 @@ body {
   background: var(--alice-blue);
   width: 100%;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: 500;
   overflow-x: hidden;
 }
 

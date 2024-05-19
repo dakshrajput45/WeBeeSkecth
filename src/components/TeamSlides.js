@@ -1,4 +1,4 @@
-import TeamData from "../TeamData";
+import TeamData from "../Data/TeamData";
 import TeamCard from "./TeamCard";
 import Aos from 'aos';
 import 'aos/dist/aos.css';

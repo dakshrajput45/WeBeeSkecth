@@ -6,7 +6,7 @@ import {
     FaInstagramSquare,
     FaLinkedinIn
 } from "react-icons/fa";
-import "./Footer.css";
+import "../Css/Footer.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";

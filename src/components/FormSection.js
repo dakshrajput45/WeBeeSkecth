@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { MdArrowOutward, MdArrowForward } from "react-icons/md";
-import "./FormSection.css";
+import "../Css/FormSection.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Form from "./Form";
@@ -27,7 +27,7 @@ function FormSection() {
           }
         </p>
         <button
-          className="explore-btn-two"
+          className="explore-btn"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >

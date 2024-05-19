@@ -1,4 +1,4 @@
-import "./BannerSection.css"
+import "../Css/BannerSection.css"
 
 function BannerSection ({props}) {
     console.log(props.title);

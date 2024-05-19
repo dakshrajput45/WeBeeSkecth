@@ -1,5 +1,5 @@
 
-import "./ClientTestimonals.css";
+import "../Css/ClientTestimonals.css";
 
 function PersonalCard({Data}) {
     

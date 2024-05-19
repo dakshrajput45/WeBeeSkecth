@@ -1,5 +1,5 @@
 import CardProcess from "./CardProcess";
-import ProcessCardData from "../ProcessCard-Data";
+import ProcessCardData from "../Data/ProcessCard-Data";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";

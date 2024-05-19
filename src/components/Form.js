@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MdArrowOutward, MdArrowForward } from "react-icons/md";
-import "./FormSection.css";
+import "../Css/FormSection.css";
 
 function Form() {
   const [formData, setFormData] = useState({

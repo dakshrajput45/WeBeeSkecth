@@ -1,7 +1,7 @@
 import { MdArrowOutward, MdArrowForward } from "react-icons/md";
 import SmallAboutUs from "../components/SmallAboutUs";
 import CardDigital from "../components/CardDigital";
-import DigitalCardData from "../DigitalCard-Data";
+import DigitalCardData from "../Data/DigitalCard-Data";
 import OurServicesSections from "../components/OurServicesSection";
 import Process from "../components/Process";
 import TeamSlides from "../components/TeamSlides";

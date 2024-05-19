@@ -1,9 +1,9 @@
 import BannerSection from "../components/BannerSection";
-import BannerData from "../Banner-data.js";
+import BannerData from "../Data/Banner-data.js";
 import { MdArrowOutward,MdArrowForward } from "react-icons/md";
 import SmallAboutUs from "../components/SmallAboutUs.js";
 import CardDigital from "../components/CardDigital.js";
-import DigitalCardData from "../DigitalCard-Data.js";
+import DigitalCardData from "../Data/DigitalCard-Data.js";
 import TeamSlides from "../components/TeamSlides.js";
 import ClientTestimonals from "../components/ClientTestimonals.js";
 import FormSection from "../components/FormSection.js";

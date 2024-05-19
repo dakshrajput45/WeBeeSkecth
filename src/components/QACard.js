@@ -1,5 +1,5 @@
 
-import "./FrequentAnswer.css";
+import "../Css/FrequentAnswer.css";
 
 function QACard({ QAData }) {
     return (

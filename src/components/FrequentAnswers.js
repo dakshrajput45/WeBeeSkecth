@@ -1,6 +1,6 @@
 import QACard from "./QACard";
-import QAData from "../QAData";
-import "./FrequentAnswer.css";
+import QAData from "../Data/QAData";
+import "../Css/FrequentAnswer.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -14,6 +14,7 @@ function FrequentAnswer() {
             once: true,
         });
     }, []);
+    
     return (
         <div className="fa-comp" data-aos="zoom-in">
             <div className="fa-text" data-aos="fade-up">
