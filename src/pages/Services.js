@@ -12,7 +12,7 @@ function Services() {
       <div>
         <BannerSection props={BannerData[1]} />
       </div>
-      <div className="flex flex-col p-[40px] lg:flex-row sm:p-[100px] justify-evenly">
+      <div className="flex flex-col p-[10px] lg:flex-row sm:p-[100px] justify-evenly">
         <div className="flex flex-col sm:min-w-[350px] lg:mr-[60px] mb-20">
           <div className=" flex flex-col p-[20px] py-[60px] mb-[40px] rounded-2xl border border-gray-400 shadow-2xl justify-evenly">
             <div className="flex flex-row mb-[18px] text-[18px]" onClick={()=>{setService(AnalyticsService)}}>

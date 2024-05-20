@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     grid-template-columns: repeat(4, 3fr); 
     gap: 30px;
-    padding: 100px;
+    padding: 60px;
     height: 500px;
     background-color: rgb(0, 33, 65);
     color: white;
@@ -132,14 +132,11 @@
 
 
 @media screen and (max-width: 750px) {
-
-}
-@media screen and (max-width: 750px) {
     .footer {
         display: flex; 
         flex-direction: column;
         gap: 50px;
-        padding: 40px;
+        padding: 10px;
         height: 1300px;
     }
 }
