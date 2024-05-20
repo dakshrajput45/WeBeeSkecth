@@ -1,4 +1,4 @@
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { PiArrowRightLight } from "react-icons/pi";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -16,22 +16,21 @@ function OurServicesSections() {
   return (
     <div className="our-service" data-aos="fade-up">
       <div className="text-service" data-aos="fade-up">
-        <p className="check-text">OUR SERVICES</p>
-        <p>{"Services"}</p>
-        <p>{"We're"}</p>
-        <p>{"Offering"}</p>
+        <p className="text-[22px] mb-[5px] font-medium">OUR SERVICES</p>
+        <p className="text-[34px] sm:text-[60px] leading-[55px] mb-[40px] sm:mb-[60px]">Services We're Offering </p>
       </div>
       <div className="div-service-e" data-aos="fade-up">
         <p>{"Analytics and Data Insights"}</p>
         <div className="div-service-img">
           <img
-            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image2.png"
+            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image1.png"
             alt="yes"
           />
           <p>Elevate your brand with impactful social media strategies.</p>
         </div>
         <div className="arrow-service">
-          <FaRegArrowAltCircleRight />
+          <PiArrowRightLight />
+
         </div>
       </div>
       <p className="p-our-line"></p>
@@ -45,7 +44,7 @@ function OurServicesSections() {
           <p>Elevate your brand with impactful social media strategies.</p>
         </div>
         <div className="arrow-service">
-          <FaRegArrowAltCircleRight />
+        <PiArrowRightLight />
         </div>
       </div>
       <p className="p-our-line"></p>
@@ -55,13 +54,13 @@ function OurServicesSections() {
         </div>
         <div className="div-service-img">
           <img
-            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image2.png"
+            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image3.png"
             alt="yes"
           />
           <p>Elevate your brand with impactful social media strategies.</p>
         </div>
         <div className="arrow-service">
-          <FaRegArrowAltCircleRight />
+        <PiArrowRightLight />
         </div>
       </div>
       <p className="p-our-line"></p>
@@ -69,13 +68,13 @@ function OurServicesSections() {
         <p>{"Social Media Marketing"}</p>
         <div className="div-service-img">
           <img
-            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image2.png"
+            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image4.png"
             alt="yes"
           />
           <p>Elevate your brand with impactful social media strategies.</p>
         </div>
         <div className="arrow-service">
-          <FaRegArrowAltCircleRight />
+        <PiArrowRightLight />
         </div>
       </div>
       <p className="p-our-line"></p>
@@ -83,14 +82,14 @@ function OurServicesSections() {
         <p>{"Pay-Per-Click Advertising"}</p>
         <div className="div-service-img">
           <img
-            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image2.png"
+            src="https://marketi-html.vercel.app/marketi-demo/assets/images/offer/offer-image5.png"
             alt="yes"
             className="image-service"
           />
           <p>Elevate your brand with impactful social media strategies.</p>
         </div>
         <div className="arrow-service">
-          <FaRegArrowAltCircleRight />
+        <PiArrowRightLight />
         </div>
       </div>
       <p className="p-our-line"></p>

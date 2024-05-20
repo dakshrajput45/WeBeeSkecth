@@ -1,14 +1,17 @@
 .client-test {
     display: flex;
     flex-direction: row;
-    padding: 100px;
-    margin-top: 20px;
+    padding: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap:50px;
+    justify-content: space-evenly;
 }
 
 .client-text {
     display: flex;
     flex-direction: column;
-    padding-right: 100px;
+    width: 100%;
 }
 
 .client-text button{
@@ -16,19 +19,6 @@
     margin-bottom: 10px;
 }
 
-.client-text p:nth-of-type(1){
-    font-size: 20px;
-}
-.client-text p:nth-of-type(2){
-    font-size: 33px;
-    font-weight: 400;
-    padding-right: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.client-text p:nth-of-type(3){
-    font-size: 18px;
-}
 
 .client-text-img {
     margin-top: 10px;
@@ -41,49 +31,35 @@
     margin-left:10px;
 }
 
-.client-card {
-    display: flex;
-    flex-direction: column;
-}
-
-
 .card {
     background-color: aliceblue;
     border-radius: 20px;
-    
-}
-.card-text {
-    font-size: 20px;
-    font-weight: 200;
-    padding: 20px;
-    padding-right: 150px;
+    padding: 30px;
+    border-radius: 24px;
+    width: 100%;
 }
 
-.black-line {
-    border-bottom: 2px solid gray;
-    width: 87%;
-    margin-left: 3%;
-    margin-right: 3%;
-}
+
 
 .info-container {
-    padding: 30px !important;
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .info-second {
     display: flex;
     flex-direction: row;
+    gap: 30px;
 }
 .stars {
-    padding-right: 80px;
-}
-.star {
-    margin-right:10px;
-    font-size: xx-large;
+    display: flex;
+    color: #ffc422;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap:5px
 }
 .img-container {
     width: 70px; 
@@ -100,49 +76,21 @@
     object-fit: cover; 
 }
 
-.info-container-text {
-    display: flex;
-    padding-left: 10px;
-    flex-direction: column;
-    color: black;
-}
-.info-container-text p:first-child {
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.info-container-text p:last-child {
-    font-size:20px;
-    font-weight: 300;
-}
-
 .btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 20px;
     color: #333;
-    margin: 0 10px;
+    margin-top: 15px;
+    margin-right: 25px;
 }
 
-.try-btn { 
-    background-color: rgb(0, 33, 65);;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.try-btn:hover {
-    background-color: #0056b3;
-}
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .client-test {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding: 40px;
     }
     
@@ -161,31 +109,15 @@
         display: none;
     }
     
-    .card {
-        background-color: aliceblue;
-        margin-top: 20px;
-        border-radius: 20px;
-    }
-    .card-text {
-        font-size: 20px;
-        font-weight: 200;
-        padding: 10px;
-    }
-    .info-container{
-        flex-direction: column !important;
-        align-items: start;
-    }
     
-    .star {
-        margin-top: 10px;
-        font-size: large;
-    }
 }
 @media screen and (max-width: 600px) {
     .client-test {
         display: flex;
         flex-direction: column;
-        padding: 40px;
+        padding: 10px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     
     .client-text {
@@ -198,21 +130,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    
-    .client-text p:nth-of-type(1){
-        font-size: 20px;
-    }
-    .client-text p:nth-of-type(2){
-        font-size: 33px;
-        font-weight: 400;
-        padding-right: 150px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .client-text p:nth-of-type(3){
-        font-size: 18px;
-    }
-    
+     
     .client-text-img {
         display: none;
     }
@@ -222,23 +140,10 @@
         margin-top: 20px;
         border-radius: 20px;
     }
-    .card-text {
-        font-size: 20px;
-        font-weight: 200;
-        padding: 10px;
-    }
-    
-    .black-line {
-        border-bottom: 2px solid gray;
-        width: 87%;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
     
     .info-container{
-        padding: 30px;
-        display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     
     .img-container {
@@ -254,52 +159,6 @@
         width: 100%; 
         height: 100%; 
         object-fit: cover; 
-    }
-    
-    .info-container-text {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-    }
-    .info-container-text p:first-child {
-        font-size: 30px;
-        font-weight: 300;
-    }
-    
-    .info-container-text p:last-child {
-        font-size:20px;
-        font-weight: 300;
-    }
-    
-    .btn {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        color: #333;
-        margin: 0 10px;
-    }
-    
-    .try-btn {
-        background-color: rgb(0, 33, 65);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-    
-    .try-btn:hover {
-        background-color: #0056b3;
-    }
-    .info-container{
-        flex-direction: column !important;
-    }
-    .star {
-        margin-right: 2px;
-        margin-top: 10px;
-        font-size: large;
     }
     
 }

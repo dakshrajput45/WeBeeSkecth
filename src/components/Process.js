@@ -17,13 +17,12 @@ function Process() {
     return (
         <div className="process" data-aos="fade-up">
             <div className="process-text" data-aos="fade-up">
-                <div className="process-div-text">
-                    <p>HOW DO WE <span className="highlight"> WORK </span></p>
-                    <p>Our Work Process</p>
+                <div className="w-full">
+                    <p className="text-[22px] mb-[5px]">HOW DO WE WORK </p>
+                    <p className="text-[50px] leading-[55px] font-medium">Our Work Process</p>
                 </div>
-                <div className="process-div">
-                    <div>Discover a spectrum of cutting-edge digital marketing services </div>
-                    <div>tailored to elevate your online presence,<span className="highlight">  drive engagement</span>.</div>
+                <div className="w-full">
+                    <div className="text-[18px]">Discover a spectrum of cutting-edge digital marketing services tailored to elevate your online presence,drive engagement.</div>
                 </div>
             </div>
             <div className="data-card-p" data-aos="fade-up">

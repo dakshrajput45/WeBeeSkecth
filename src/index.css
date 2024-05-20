@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face {
+  font-family: 'Clash Grotesk';
+  src: url('./Fonts/ClashDisplayMedium.otf') format('otf'),
+       url('./Fonts/ClashDisplayRegular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -21,7 +27,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Clash Grotesk', sans-serif;
   background: var(--alice-blue);
   width: 100%;
   line-height: 32px;
@@ -41,11 +47,14 @@ body {
 .banner {
   display: flex;
   flex-direction: row;
+  background-image: url("https://marketi-html.vercel.app/marketi-demo/assets/images/banner/banner-info.png");
+  background-position: left 300px  top 220px;
   width: 100%;
   height: 107vh;
-  padding: 100px;
+  padding: 60px;
   background-color: var(--alice-blue);
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 960px) {
@@ -54,7 +63,7 @@ body {
     flex-direction: row;
     width: 100%;
     height: max-content;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--alice-blue);
     justify-content: space-between;
     padding-top: 7vh;
@@ -64,36 +73,31 @@ body {
 .left-ban {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  font-weight: 500;
+  width: 100%;
+  font-family: 'Clash Grotesk medium', sans-serif; 
   height: max-content;
   justify-content: center;
+  margin-top: 20vh;
   align-items: center;
-  padding: 40px;
 }
+
 
 .left-ban-text {
   display: flex;
   color: black;
-  font-size: 30px;
   flex-direction: column;
   justify-content: center;
 }
 
-.left-ban-text p {
-  margin: 0;
-  line-height: 1.4;
-  white-space: pre-wrap;
-}
-
-.left-ban-text p:first-child {
-  font-weight: 900;
-  margin-bottom: 15px;
+.left-ban-text span {
+  margin-left: 5px;
 }
 
 .explore-btn{
-  margin: 5px;
-  padding: 10px 20px;
-  font-size: 20px;
+  margin: 15px;
+  padding: 8px 14px;
+  font-size: 16px;
   color: white;
   background-color: var(--dark-blue);
   border: none;
@@ -109,9 +113,9 @@ body {
 }
 
 .left-ban-text button {
-  margin: 5px;
-  padding: 10px 20px;
-  font-size: 20px;
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 18px;
   color: white;
   background-color: var(--dark-blue);
   border: none;
@@ -122,6 +126,41 @@ body {
   transition: transform 0.3s ease; 
 }
 
+
+@media screen and (max-width: 768px) {
+  .explore-btn{
+    margin: 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: white;
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  
+.left-ban-text button {
+  margin: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: white;
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease; 
+}
+  
+  .explore-btn:hover {
+    transform: scale(1.05);
+  }
+}
 .left-ban-text button:hover {
   transform: scale(1.05);
 }
@@ -131,7 +170,7 @@ body {
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 50%;
+  width: 100%;
   z-index: -1;
   position: relative;
 }
@@ -140,7 +179,7 @@ body {
   width: 100%;
   height: auto;
   position: absolute;
-  animation: moveLeftRight 5s infinite;
+  animation: moveLeftRight 3s infinite;
 }
 
 @keyframes moveLeftRight {
@@ -157,7 +196,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .banner {
     flex-direction: column;
     width: 100%;
@@ -168,29 +207,6 @@ body {
   .left-ban {
     width: 100%;
     height: max-content;
-  }
-
-  .left-ban-text {
-    display: flex;
-    color: black;
-    font-size: 30px;
-    flex-direction: column;
-    margin-top: 30vh;
-    justify-content: center;
-  }
-
-  .left-ban-text button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .left-ban-text p {
-    font-size: 20px;
-  }
-
-  .left-ban-text p:first-child {
-    font-weight: 30px;
-    margin-bottom: 15px;
   }
 
   .right-ban {
@@ -210,6 +226,7 @@ body {
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 60px;
+  margin-bottom: 80px;
   width: 65%;
 }
 
@@ -217,109 +234,100 @@ body {
 .data-card {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding: 100px;
-}
-.digi-card {
-  padding-right: 100px;
+  justify-content: space-evenly;
+  gap:30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 100px;
 }
 
 .digi-card img {
   border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 15px;
   background-color: var(--alice-blue);
 }
 
 .digi-card p:first-child {
   font-weight: bold;
-  font-size: large;
-}
-.card-btn {
-  margin: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: var(--dark-blue);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 /*---------------Process------------*/
 
 .process {
-  padding: 100px;
+  padding: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .process-text {
   display: flex;
   color: black;
   justify-content: space-between;
+  margin-bottom: 90px;
 }
 
-.process-text p:last-child {
-  font-size: 15px;
-  color: black;
-}
-
-.process-div-text {
-  margin-top: 10px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.process-div {
-  margin-top: 10px;
-  margin-right: 13px;
-  font-size: 25px;
-}
-
-.process-div-text p:first-child {
-  font-size: 24px;
-  color: black;
-  font-weight: bold;
-}
-
-.process-div-text p:last-child {
-  font-size: 18px;
-  color: #888;
-  margin-top: 10px;
-}
 
 .data-card-p {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  gap:30px;
 }
 
 .p-card {
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 .p-card img {
   border: 1px solid black;
   border-radius: 10px;
-  padding: 5px;
+  padding: 12px;
   background-color: var(--alice-blue);
 }
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 950px) {
+  .line-cont {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    color: black;
+  }
+  
+  .p-line {
+    border-top: 1px solid var(--dark-blue);
+    margin-top: 15px;
+    margin-left: 2px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    width: 100%;
+  }
+
   .process {
-    padding: 40px;
+    padding: 10px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
   }
   .process-text {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .data-card-p {
     display: flex;
     flex-direction: column;
   }
 }
 /*--------------TeamSlides-------*/
 .team-card {
-  padding-left: 100px;
-  padding-top: 40px;
-  padding-right: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .team-text {
@@ -328,24 +336,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 90px;
 }
 
-.team-text p:nth-of-type(1) {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.team-text p:nth-of-type(2) {
-  font-size: 60px;
-  font-weight: bold;
-  margin: 20px;
-}
 .four-card-container {
   display: flex;
   color: black;
   flex-direction: row;
-  justify-content: space-between;
-  padding-top: 40px;
+  justify-content: space-evenly;
 }
 
 .f-card-team {
@@ -390,21 +388,13 @@ body {
 
 @media screen and (max-width: 900px) {
   .team-card {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .team-text p:nth-of-type(1) {
-    font-size: 20px;
-    font-weight: 500;
+  .team-text {
+    padding-bottom: 50px;
   }
-
-  .team-text p:nth-of-type(2) {
-    font-size: 35px;
-    font-weight: bold;
-    margin: 20px;
-  }
-
   .four-card-container {
     display: flex;
     flex-direction: column;
@@ -449,11 +439,6 @@ body {
     flex-direction: column;
     gap:20px;
   }
-  .data-card-p {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
 }
 @media screen and (max-width: 1400px) {
   .l-card-team {
@@ -465,36 +450,15 @@ body {
 .first-about {
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 100px;
 }
-
-.first-about-sec p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: xx-large;
+.first-about-sec {
+  margin-bottom: 60px;
 }
-
-.first-about-sec p:nth-of-type(1) {
-  border: 1px solid --dark-gray;
-  background: var(--dark-gray);
-  padding: 10px;
-  width: 190px;
-  color: var(--white);
-  border-radius: 5px;
-}
-
 .second-about-sec {
   display: flex;
-}
-
-.second-about-sec p:first-child {
-  font-size: xx-large;
-}
-
-.second-about-sec p {
-  padding-right: 120px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .second-about-sec button{
@@ -517,7 +481,7 @@ body {
   }
 
   .first-about {
-    padding: 40px;
+    padding: 10px;
   }
 
   .second-about-sec p:first-child {

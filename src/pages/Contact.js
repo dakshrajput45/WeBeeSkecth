@@ -36,11 +36,11 @@ function Contact() {
       </div>
       <div className="contact-text-f">
         <div>
-          <h1>Contact Us</h1>
+          <h1 className="text-[22px] px-[15px] py-[5px] mb-[5px] bg-gray-400 rounded-2xl">Contact Us</h1>
         </div>
         <div>
-          <p>We’d Love To Hear From You</p>
-          <p>
+          <p className="text-[25px] md:text-[60px] leading-[32px] md:leading-[80px] font-medium">We’d Love To Hear From You</p>
+          <p className="text-[18px] leading-[32px] mt-[15px]">
             Your feedback is invaluable to us, and we eagerly await your
             thoughts and insights. Chat to our friendly team.
           </p>
@@ -52,9 +52,9 @@ function Contact() {
             <BsChatRightText />
           </div>
           <div>
-            <p>Chat to support</p>
-            <p>Speak to our friendly team.</p>
-            <p>support@marketi.test</p>
+            <p className="text-[24px] leading-[32px] font-medium">Chat to support</p>
+            <p className="text-[18px] leading-[32px] text-gray-500">Speak to our friendly team.</p>
+            <p className="text-[18px] leading-[32px] mt-[15px]">support@marketi.test</p>
           </div>
         </div>
         <div className="contact-card-s">
@@ -62,9 +62,9 @@ function Contact() {
             <CiMap />
           </div>
           <div>
-            <p>Visit us</p>
-            <p>Visit our office HQ.</p>
-            <p>456 Elm Avenue, Cityville, State 67890</p>
+            <p className="text-[24px] leading-[32px] font-medium">Visit us</p>
+            <p className="text-[18px] leading-[32px] text-gray-500">Visit our office HQ.</p>
+            <p className="text-[18px] leading-[32px] mt-[15px]">456 Elm Avenue, Cityville, State 67890</p>
           </div>
         </div>
         <div className="contact-card-t">
@@ -72,9 +72,9 @@ function Contact() {
             <MdAddCall />
           </div>
           <div>
-            <p>Call us</p>
-            <p>Mon-Fri from 8am to 5pm.</p>
-            <p>+91 283922XXXX</p>
+            <p className="text-[24px] leading-[32px] font-medium">Call us</p>
+            <p className="text-[18px] leading-[32px] text-gray-500">Mon-Fri from 8am to 5pm.</p>
+            <p className="text-[18px] leading-[32px] mt-[15px]">+91 283922XXXX</p>
           </div>
         </div>
       </div>
@@ -89,8 +89,8 @@ function Contact() {
       </div>
       <div className="contact-land">
         <div>
-          <p>Unlock Your Digital Potential With Marketi's SEO Solutions!</p>
-          <p>
+          <p className=" text-[25px] md:text-[56px] leading-[32px] md:leading-[80px]">Unlock Your Digital Potential With Marketi's SEO Solutions!</p>
+          <p className="text-[18px] leading-[32px]">
             Elevate your online presence with Marketi's trusted SEO solutions.
           </p>
         </div>
@@ -99,6 +99,7 @@ function Contact() {
             variant="contained"
             disableElevation
             className="get-start-btn"
+            style={{ fontSize: "12px", padding:"5px 10px"}}
           >
             Get Started
           </Button>

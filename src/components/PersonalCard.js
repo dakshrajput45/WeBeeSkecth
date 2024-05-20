@@ -9,8 +9,8 @@ function PersonalCard({Data}) {
                 <img src={Data.img} alt="img"/>
             </div>
             <div>
-                <p>{Data.name}</p>
-                <p>{Data.job}</p>
+                <p className="text-[22px] mt-[15px]">{Data.name}</p>
+                <p className="text-[18px]">{Data.job}</p>
             </div>
         </div>
     );

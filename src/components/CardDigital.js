@@ -15,12 +15,12 @@ function CardDigital({DigitalCardData}) {
     const [hovered, setHovered] = useState(false);
     return(
         <div className="digi-card" data-aos="zoom-in">
-            <div>
+            <div className="mb-[25px]">
                 <img src={DigitalCardData.img} alt="yesss"/>
             </div>
             <div>
                 <p>{DigitalCardData.title}</p>
-                <p>{DigitalCardData.desc}</p>
+                <p className="text-[18px]">{DigitalCardData.desc}</p>
             </div>
             <div>
             <button className="explore-btn"

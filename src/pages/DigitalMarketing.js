@@ -19,8 +19,12 @@ function DigitalMarketing() {
       <div className="banner">
         <div className="left-ban">
           <div className="left-ban-text">
-            <p>{"The Digital\nMarketing Agency\nFor Higher ROI"}</p>
-            <p>
+            <div className="flex flex-row items-center">
+            <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">The Digital</p>
+              <span><img src="https://marketi-html.vercel.app/marketi-demo/assets/images/banner/banner-tittle-star.png" alt="img" /></span>
+            </div >
+              <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">Marketing Agency For Higher ROI</p>
+            <p className="text-[18px] mt-[50px]">
               Choose success with our digital marketing agency, dedicated to
               delivering
               <span className="highlight"> higher ROI</span> that propels your

@@ -40,29 +40,29 @@ function SmallAboutUs() {
         </div>
       </div>
       <div className="right-aboutus" data-aos="fade-up">
-        <p>{"About Us"}</p>
-        <p className="two-p-aboutus" data-aos="fade-up">
+        <p className="text-[22px] mb-[5px]">{"About Us"}</p>
+        <p className=" text-[34px] sm:text-[45px] leading-[32px] sm:leading-[55px] font-medium" data-aos="fade-up">
           Why <span className="highlight"> Webeesketch </span>Should Be Your Top
           Choice
         </p>
-        <p>
+        <p className="text-[18px] leading-[32px] mt-[15px]">
           Choose Marketi for unparalleled digital{" "}
-          <span className="highlight"> success-where expertise,innovation</span>
-          , and strategic brilliance converge to elevate your business to new
+          success-where expertise,innovation, 
+          and strategic brilliance converge to elevate your business to new
           heights.
         </p>
 
         <div className="card-aboutus" data-aos="fade-up">
           <div>
-            <p id="experience">12</p>
+            <p id="experience" className="text-[48px] mb-[10px]">12</p>
             <p>Years of experience</p>
           </div>
           <div>
-            <p id="projects">10</p>
+            <p id="projects" className="text-[48px] mb-[10px]">10</p>
             <p>Completed Projects</p>
           </div>
           <div>
-            <p id="customers">5</p>
+            <p id="customers" className="text-[48px] mb-[10px]">5</p>
             <p>Trusted Customers</p>
           </div>
         </div>

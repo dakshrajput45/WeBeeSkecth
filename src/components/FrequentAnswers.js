@@ -17,9 +17,9 @@ function FrequentAnswer() {
     
     return (
         <div className="fa-comp" data-aos="zoom-in">
-            <div className="fa-text" data-aos="fade-up">
-                <p>FREQUENTLY A&Q</p>
-                <p>Find Answer You Needs</p>
+            <div className="flex flex-col mb:[50px] md:mb-[90px]" data-aos="fade-up">
+                <p className="text-[22px] mb-[5px]">FREQUENTLY A&Q</p>
+                <p className="text-[34px] md:text-[50px] leading-[32px] md:leading-[55px]">Find Answer You Needs</p>
             </div>
             <div>
                     <QACard QAData={QAData[0]} />

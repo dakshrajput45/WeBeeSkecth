@@ -22,8 +22,8 @@ function AboutUs() {
 
       <div className="first-about">
         <div className="first-about-sec">
-          <p>ABOUT US</p>
-          <p>
+          <p className="text-[20px] px-[15px] py-[5px] mb-[5px] bg-gray-400 w-[140px] rounded-2xl text-white">ABOUT US</p>
+          <p className="text-[32px] leading-[32px] mt-[15px]">
             At Marketi, we understand the critical role that search engine
             optimization plays in driving online success for businesses of all
             sizes.
@@ -31,8 +31,8 @@ function AboutUs() {
         </div>
         <div className="second-about-sec">
           <div>
-            <p>Our Mission</p>
-            <p>
+            <p className="text-[40px] mb-[10px]">Our Mission</p>
+            <p className="text-[18px] leading-[32px]">
               Our goal is to boost your online visibility and engagement, drive
               organic traffic, and ultimately, maximize your digital success.
             </p>
@@ -45,8 +45,8 @@ function AboutUs() {
           </button>
           </div>
           <div>
-            <p>Our Story</p>
-            <p>
+            <p className="text-[40px] mb-[10px]">Our Story</p>
+            <p className="text-[18px] leading-[32px]">
               Marketi was founded on the principle that every business,
               regardless of size or industry, deserves a tailored approach to
               marketing.
