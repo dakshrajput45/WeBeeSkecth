@@ -9,15 +9,24 @@ import ClientTestimonals from "../components/ClientTestimonals";
 import FrequentAnswer from "../components/FrequentAnswers";
 import FormSection from "../components/FormSection";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import Aos from "aos";
 
 function DigitalMarketing() {
   const [hovered, setHovered] = useState(false);
   const [hover, setHover] = useState(false);
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+});
+
   return (
     <div>
       <div className="banner">
-        <div className="left-ban">
+        <div className="left-ban" data-aos="fade-up">
           <div className="left-ban-text">
             <div className="flex flex-row items-center">
             <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">The Digital</p>
@@ -26,8 +35,8 @@ function DigitalMarketing() {
               <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">Marketing Agency For Higher ROI</p>
             <p className="text-[18px] mt-[50px]">
               Choose success with our digital marketing agency, dedicated to
-              delivering
-              <span className="highlight"> higher ROI</span> that propels your
+              delivering 
+              higher ROI that propels your
               business to new heights.
             </p>
             <div>
@@ -55,7 +64,7 @@ function DigitalMarketing() {
         </div>
       </div>
       <div className="line-cont">
-        <p>{"USED BY WORLD LEADING COMPANIES   "}</p>
+        <p>{"USED BY WORLD LEADING COMPANIES  "}</p>
         <p className="p-line"></p>
       </div>
       <div>

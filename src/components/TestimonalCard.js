@@ -2,7 +2,7 @@ import "../Css/ClientTestimonals.css";
 import { PiStarFill } from "react-icons/pi";
 
 function TestimonalCard({ TeamData }) {
-  console.log(TeamData.name);
+  //console.log(TeamData.name);
   return (
     <div className="testi-card" data-aos="fade-up">
       <div className="card-text" data-aos="fade-up">
@@ -13,7 +13,7 @@ function TestimonalCard({ TeamData }) {
           valuable insights for future growth.
         </p>
       </div>
-      <p class="border border-gray-400 mb-8 mt-8 border-solid"></p>
+      <p className="border border-gray-400 mb-8 mt-8 border-solid"></p>
       <div className="info-container" data-aos="fade-up">
         <div className="info-second">
           <div className="img-container">

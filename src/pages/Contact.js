@@ -11,30 +11,27 @@ import { MdArrowOutward, MdArrowForward } from "react-icons/md";
 import Button from "@mui/material/Button";
 import Form from "../components/Form";
 import "../Css/Contact.css";
+import ContactMap from "../components/Map";
 
 function Contact() {
   useEffect(() => {
     Aos.init({
-      duration: 1500,
+      duration: 1000,
       easing: "ease-in-out",
       once: true,
     });
   }, []);
   
 
-  
-  function submitHandler() {
-    console.log("Webee");
-  }
-
   const [hovered, setHovered] = useState(false);
+
 
   return (
     <div className="contact">
       <div>
         <BannerSection props={BannerData[2]} />
       </div>
-      <div className="contact-text-f">
+      <div className="contact-text-f" data-aos="fade-up">
         <div>
           <h1 className="text-[22px] px-[15px] py-[5px] mb-[5px] bg-gray-400 rounded-2xl">Contact Us</h1>
         </div>
@@ -46,7 +43,7 @@ function Contact() {
           </p>
         </div>
       </div>
-      <div className="contact-card">
+      <div className="contact-card" data-aos="zoom-in">
         <div className="contact-card-f">
           <div className="contact-card-f-icon">
             <BsChatRightText />
@@ -79,7 +76,9 @@ function Contact() {
         </div>
       </div>
       <div className="map-form">
-        <div className="map"></div>
+        <div className="w-[100%] lg:w-[60%] border-slate-400 rounded-[24px] border mb-[60px] lg:mb-[10px]" data-aos="zoom-in" >
+          <ContactMap />
+        </div>
         <div data-aos="fade-up">
           <Form />
         </div>
@@ -87,7 +86,7 @@ function Contact() {
       <div>
         <FrequentAnswer />
       </div>
-      <div className="contact-land">
+      <div className="contact-land" data-aos="fade-up" >
         <div>
           <p className=" text-[25px] md:text-[56px] leading-[32px] md:leading-[80px]">Unlock Your Digital Potential With Marketi's SEO Solutions!</p>
           <p className="text-[18px] leading-[32px]">
@@ -105,7 +104,6 @@ function Contact() {
           </Button>
           <button
             className="explore-btn-contact"
-            onClick={submitHandler}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >

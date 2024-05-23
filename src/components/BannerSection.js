@@ -1,9 +1,18 @@
 import "../Css/BannerSection.css"
+import { useEffect } from "react";
+import Aos from "aos";
 
 function BannerSection ({props}) {
-    console.log(props.title);
+    useEffect(() => {
+        Aos.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+        });
+    });
+    //console.log(props.title);
     return(
-        <div className="about-ban">
+        <div className="about-ban" data-aos="fade-down">
             <div>
                 <p className="text-[60px] leading-[55px] text-white tracking-wide">{props.title}</p>
             </div>

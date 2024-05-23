@@ -11,7 +11,7 @@ import { useEffect } from "react";
 function ClientTestimonals() {
   useEffect(() => {
     Aos.init({
-      duration: 1500,
+      duration: 1000,
       easing: "ease-in-out",
       once: true,
     });
@@ -28,7 +28,7 @@ function ClientTestimonals() {
     if (index === len - 1) setIndex(0);
     else setIndex(index + 1);
   }
-  console.log(TeamData);
+  //console.log(TeamData);
   const [hover, setHover] = useState(false);
   return (
     <div className="client-test" data-aos="fade-up">
@@ -54,7 +54,7 @@ function ClientTestimonals() {
             Try It Now {hover ? <MdArrowForward /> : <MdArrowOutward />}
           </button>
         </div>
-        <p class="border border-gray-400 mb-8 border-solid"></p>
+        <p className="border border-gray-400 mb-8 border-solid"></p>
         <div className="client-text-img" data-aos="fade-up">
           <img
             src="https://marketi-html.vercel.app/marketi-demo/assets/images/testimonial/user.png"

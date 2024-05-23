@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import "../Css/NavBar.css";
 import Aos from "aos";
 import {
@@ -9,6 +9,8 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  
+  const [sticky, setSticky] = useState(false);
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -25,6 +27,7 @@ const Navbar = () => {
     setActive(!active);
     setIcon(!icon);
   };
+ 
 
   useEffect(() => {
     const handleDocumentClick = () => {
@@ -40,24 +43,71 @@ const Navbar = () => {
   }, []);
 
   const handleMenuClick = (e) => {
-    e.stopPropagation(); // Prevent the document click event
+    e.stopPropagation(); 
     setActive(false);
     setIcon(false);
   };
 
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const isAtTop = window.pageYOffset === 0;
+      setSticky(!isAtTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  //console.log(sticky);
   return (
-    <nav className="nav" data-aos="fade-down">
-      <div className="nav__brand">
+    <nav
+      className={sticky ? "nav sticky" : "nav"}
+      data-aos="fade-down"
+    >
+      <div className={sticky ? "top" : "top-nav"}>
+        <div className="info-nav">
+          <p>+91 934732XXXX</p>
+          <p>Emailexample@gmail.com</p>
+        </div>
+        <div className="social-media">
+          <ul className="social-media-desktop">
+            <li>
+              <a href="https://www.facebook.com/webeesketch">
+                <FaFacebookSquare className="facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/webeesketch">
+                <FaInstagramSquare className="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/webeesketch">
+                <FaLinkedinIn />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="nav__brand" data-aos="fade-down">
         <div className="logo">
           <img
-            src=""
+            src="https://www.webeesketch.com/scale.png"
+            className="w-[55%] ml-5"
             alt="logo"
             onClick={() => {
               navigate("/");
             }}
           ></img>
         </div>
-        <ul className={active ? "nav__menu nav__active" : "nav__menu"} onClick={handleMenuClick}>
+        <ul
+          className={active ? "nav__menu nav__active" : "nav__menu"}
+          onClick={handleMenuClick}
+        >
           <div className="btn-nav">
             <li className="nav__item">
               <button
@@ -101,7 +151,7 @@ const Navbar = () => {
                   navigate("/contact");
                 }}
               >
-                contact
+                Contact
               </button>
             </li>
             <div className="info-contain">
@@ -131,35 +181,16 @@ const Navbar = () => {
             </div>
           </div>
         </ul>
-        <div onClick={(e) => { e.stopPropagation(); navToggle(); }} className={icon ? "nav__toggler toggle" : "nav__toggler"}>
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+            navToggle();
+          }}
+          className={icon ? "nav__toggler toggle" : "nav__toggler"}
+        >
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>
-        </div>
-      </div>
-      <div className="top-nav">
-        <div className="info-nav">
-          <p>+91 934732XXXX</p>
-          <p>Emailexample@gmail.com</p>
-        </div>
-        <div className="social-media">
-          <ul className="social-media-desktop">
-            <li>
-              <a href="https://www.facebook.com/webeesketch">
-                <FaFacebookSquare className="facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/webeesketch">
-                <FaInstagramSquare className="instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/webeesketch">
-                <FaLinkedinIn />
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>

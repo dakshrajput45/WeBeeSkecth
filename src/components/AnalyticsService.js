@@ -2,6 +2,8 @@ import { SiGoogledocs } from "react-icons/si";
 import { BsFillSendCheckFill } from "react-icons/bs";
 import { FcApproval } from "react-icons/fc";
 import CardService from "../components/CardService";
+import { useEffect } from "react";
+import Aos from "aos";
 
 function AnalyticsService() {
   const points = [
@@ -10,6 +12,14 @@ function AnalyticsService() {
     "- Tech-wise - the clear need for a backend that should talk with mobile clients",
     "- Some simple web frontend - static pages should be enough! (nope)",
   ];
+
+  useEffect(() => {
+    Aos.init({
+        duration: 1000, 
+        easing: 'ease-in-out', 
+        once: true,
+    });
+}, [])
 
   const cardServices = [
     {
@@ -29,7 +39,7 @@ function AnalyticsService() {
     },
   ];
   return (
-    <div className="font-medium">
+    <div className="font-medium" data-aos="fade-up">
       <div >
         <p className="text-[60px] mb-[30px] font-medium leading-[72px]">
           Discover Your Data's Destiny
@@ -55,14 +65,14 @@ function AnalyticsService() {
         />
       </div>
       <div>
-        <div>
+        <div data-aos="fade-up">
           <p className="text-[28px] mb-[20px] leading-[32px]">
             Start Shaping the Process
           </p>
           <p className="text-[18px] mb-[25px] leading-[32px]">
             What we have at the start:
           </p>
-          <div >
+          <div data-aos="zoom-in">
             <ul>
               {points.map((point, index) => (
                 <li
@@ -74,7 +84,7 @@ function AnalyticsService() {
               ))}
             </ul>
           </div>
-          <p className="mb-[30px] text-[18px] leading-[32px]">
+          <p className="mb-[30px] text-[18px] leading-[32px]" data-aos="fade-up">
             We have started simple — code at GitHub and a PR-based flow with a
             single requirement — to have tickets split table to be delivered in
             1–3 days. This required some practice of story slicing, and it seems
@@ -87,7 +97,7 @@ function AnalyticsService() {
           <p className="mb-[20px] text-[28px] leading-[32px]">
             Our Simple Roadmap
           </p>
-          <p className="mb-[50px] text-[18px] leading-[32px]">
+          <p className="mb-[50px] text-[18px] leading-[32px]" data-aos="fade-up">
             Nowadays, the choice of frameworks is really wide, but again, due to
             some experience with Flutter, we decided to give it a go. Within
             mobile development, one of the important aspects to better decide on
@@ -96,7 +106,7 @@ function AnalyticsService() {
         </div>
         <p className="border border-gray-400 mb-[50px] border-solid"></p>
       </div>
-      <div className="flex lg:flex-row flex-col justify-evenly">
+      <div className="flex lg:flex-row flex-col justify-evenly" data-aos="zoom-in">
         {cardServices.map((service, index) => (
           <CardService
             key={index}
@@ -107,27 +117,27 @@ function AnalyticsService() {
         ))}
       </div>
       <p className="border border-gray-400 mt-[50px] mb-[50px] border-solid"></p>
-      <div class="bg-white shadow-lg mx-auto mb-[60px] p-[15px] border border-solid border-gray-400 rounded-xl">
-        <p class="text-[20px] sm:text-[28px] leading-[32px] mb-8">
+      <div className="bg-white shadow-lg mx-auto mb-[60px] p-[15px] border border-solid border-gray-400 rounded-xl">
+        <p className="text-[20px] sm:text-[28px] leading-[32px] mb-8">
           “I am genuinely thrilled by the current fusion of technologies
           reshaping digital marketing. The integration of data analytics, AI and
           automation is revolutionizing our approach.”
         </p>
-        <div class="flex items-center  mt-[30px]">
-          <div class="mr-5">
+        <div className="flex items-center  mt-[30px]">
+          <div className="mr-5">
             <img
               src="https://marketi-html.vercel.app/marketi-demo/assets/images/service/service-details-user.png"
               alt="img"
-              class="w-24 h-24 rounded-full"
+              className="w-24 h-24 rounded-full"
             />
           </div>
           <div>
-            <p class="text-18">Willamson Hussy</p>
-            <p class="text-16">CEO of Kingtech</p>
+            <p className="text-18">Willamson Hussy</p>
+            <p className="text-16">CEO of Kingtech</p>
           </div>
         </div>
       </div>
-      <div className="leading-[32px]">
+      <div className="leading-[32px]" data-aos="fade-up">
         <p className="text-[28px] mb-[20px]">How Did We Get Into Terraform?</p>
         <p className="text-[18px] mb-[20px]">
           The backend, a part of the DB, also should have some object/file

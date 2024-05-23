@@ -8,19 +8,29 @@ import TeamSlides from "../components/TeamSlides.js";
 import ClientTestimonals from "../components/ClientTestimonals.js";
 import FormSection from "../components/FormSection.js";
 import Footer from "../components/Footer.js";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import Aos from "aos";
 
 function AboutUs() {
   const [hovered,setHovered]= useState();
   const [hover,setHover] =useState();
-  console.log(BannerData[0]);
+  //console.log(BannerData[0]);
+
+  useEffect(() => {
+    Aos.init({
+        duration: 1000, 
+        easing: 'ease-in-out', 
+        once: true,
+    });
+}, [])
+
   return (
     <div>
       <div>
         <BannerSection props={BannerData[0]} />
       </div>
 
-      <div className="first-about">
+      <div className="first-about" data-aos="fade-up">
         <div className="first-about-sec">
           <p className="text-[20px] px-[15px] py-[5px] mb-[5px] bg-gray-400 w-[140px] rounded-2xl text-white">ABOUT US</p>
           <p className="text-[32px] leading-[32px] mt-[15px]">
@@ -29,7 +39,7 @@ function AboutUs() {
             sizes.
           </p>
         </div>
-        <div className="second-about-sec">
+        <div className="second-about-sec" data-aos="zoom-in">
           <div>
             <p className="text-[40px] mb-[10px]">Our Mission</p>
             <p className="text-[18px] leading-[32px]">

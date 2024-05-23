@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import toast from "react-hot-toast"
 import { MdArrowOutward, MdArrowForward } from "react-icons/md";
+import emailjs from "@emailjs/browser";
 import "../Css/FormSection.css";
 
 function Form() {
@@ -17,9 +19,26 @@ function Form() {
       [event.target.name]: event.target.value,
     }));
   }
-  function submitHandler() {
-    console.log(formData);
-  }
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_vgmzl06", "template_4o6wbt4", form.current, {
+        publicKey: "ppnLEMR1WF__rbxPP",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          toast.success("Message Sent");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
 
   const [hovered, setHovered] = useState(false);
   return (
@@ -30,8 +49,8 @@ function Form() {
       <form
         className="form-content"
         data-aos="fade-up"
-        action="https://formspree.io/f/xnqerjzz"
-        method="POST"
+        ref={form}
+        onSubmit={sendEmail}
       >
         <div>
           <label>
@@ -81,7 +100,7 @@ function Form() {
             </p>
             <input
               required
-              type="integer"
+              type="tel"
               name="phone"
               onChange={changeHandler}
               placeholder="Enter Phone No."
@@ -92,19 +111,17 @@ function Form() {
             <p>
               Message<sup>*</sup>
             </p>
-            <input
+            <textarea
               required
-              type="text"
               name="message"
               onChange={changeHandler}
-              placeholder="Enter You Message"
-              value={formData.msg}
+              placeholder="Enter Your Message"
+              value={formData.message} // Correct field name
             />
           </label>
         </div>
         <button
           className="explore-btnn-form"
-          onClick={submitHandler}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >

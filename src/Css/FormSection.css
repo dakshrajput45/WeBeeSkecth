@@ -68,6 +68,16 @@
 .form-content input {
   width: 100%;
   padding: 8px;
+  color: black;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-content textarea {
+  width: 100%;
+  padding: 8px;
+  color: black;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 10px;

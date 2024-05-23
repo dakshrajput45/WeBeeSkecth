@@ -15,7 +15,7 @@ function Footer() {
 
     useEffect(() => {
         Aos.init({
-            duration: 1500, 
+            duration: 1000, 
             easing: 'ease-in-out', 
             once: true,
         });
@@ -35,7 +35,7 @@ function Footer() {
     return (
         <footer className="footer" data-aos="fade-up">
             <div className="footer-logo" data-aos="fade-up">
-                <img src="" alt="Company Logo" className="company-logo"  data-aos="fade-up"/>
+                <img src="https://www.webeesketch.com/scale.png" alt="Company Logo" className="w-[55%]"  data-aos="fade-up"/>
                 <p>Optimize your success with our ROI-driven digital marketing agency.</p>
 
             <div className="footer-social" data-aos="fade-up">

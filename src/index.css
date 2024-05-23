@@ -35,9 +35,6 @@ body {
   overflow-x: hidden;
 }
 
-.highlight {
-  color: var(--coral);
-}
 @media screen and (max-width: 500px) {
   .App {
     background-color: var(--alice-blue);
@@ -201,6 +198,7 @@ body {
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    background-position: left 300px  top 190px;
     height: max-content;
   }
 

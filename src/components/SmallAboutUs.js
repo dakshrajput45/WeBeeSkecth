@@ -42,7 +42,7 @@ function SmallAboutUs() {
       <div className="right-aboutus" data-aos="fade-up">
         <p className="text-[22px] mb-[5px]">{"About Us"}</p>
         <p className=" text-[34px] sm:text-[45px] leading-[32px] sm:leading-[55px] font-medium" data-aos="fade-up">
-          Why <span className="highlight"> Webeesketch </span>Should Be Your Top
+          Why Webeesketch Should Be Your Top
           Choice
         </p>
         <p className="text-[18px] leading-[32px] mt-[15px]">
