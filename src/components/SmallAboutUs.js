@@ -7,14 +7,14 @@ import img from "../images/about-image.png";
 function SmallAboutUs() {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       once: true,
     });
 
-    animateValue("experience", 0, 12, 3000, "+");
-    animateValue("projects", 0, 10, 3000, "k");
-    animateValue("customers", 0, 5, 3000, "k");
+    animateValue("experience", 30, 12, 2000, "+");
+    animateValue("projects", 30, 10, 2000, "k");
+    animateValue("customers", 30, 5, 2000, "k");
   });
 
   function animateValue(id, start, end, duration, symbol) {
@@ -34,15 +34,15 @@ function SmallAboutUs() {
 
   return (
     <div className="small-aboutus" data-aos="fade-up">
-      <div className="left-aboutus" data-aos="fade-up">
+      <div className="left-aboutus" >
         <div className="left-img-container">
           <img src={img} alt="yes" />
         </div>
       </div>
-      <div className="right-aboutus" data-aos="fade-up">
-        <p className="text-[22px] mb-[5px]">{"About Us"}</p>
-        <p className=" text-[34px] sm:text-[45px] leading-[32px] sm:leading-[55px] font-medium" data-aos="fade-up">
-          Why Webeesketch Should Be Your Top
+      <div className="right-aboutus" >
+        <p className="text-[22px] mb-[5px] text-[#f473a2]">{"About Us"}</p>
+        <p className=" text-[34px] sm:text-[45px] leading-[32px] sm:leading-[55px] font-medium" >
+          Why <span className="text-[#f473a2]">Webeesketch</span> Should Be Your Top
           Choice
         </p>
         <p className="text-[18px] leading-[32px] mt-[15px]">
@@ -52,7 +52,7 @@ function SmallAboutUs() {
           heights.
         </p>
 
-        <div className="card-aboutus" data-aos="fade-up">
+        <div className="card-aboutus" >
           <div>
             <p id="experience" className="text-[48px] mb-[10px]">12</p>
             <p>Years of experience</p>

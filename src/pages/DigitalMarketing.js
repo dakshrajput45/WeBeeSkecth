@@ -11,6 +11,7 @@ import FormSection from "../components/FormSection";
 import Footer from "../components/Footer";
 import { useState,useEffect } from "react";
 import Aos from "aos";
+import LogoScroller from "../components/LogoScroller";
 
 function DigitalMarketing() {
   const [hovered, setHovered] = useState(false);
@@ -32,10 +33,10 @@ function DigitalMarketing() {
             <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">The Digital</p>
               <span><img src="https://marketi-html.vercel.app/marketi-demo/assets/images/banner/banner-tittle-star.png" alt="img" /></span>
             </div >
-              <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">Marketing Agency For Higher ROI</p>
+              <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">Marketing Agency For <span className="text-[#f473a2]">Higher ROI.</span></p>
             <p className="text-[18px] mt-[50px]">
               Choose success with our digital marketing agency, dedicated to
-              delivering 
+              delivering
               higher ROI that propels your
               business to new heights.
             </p>
@@ -66,6 +67,9 @@ function DigitalMarketing() {
       <div className="line-cont">
         <p>{"USED BY WORLD LEADING COMPANIES  "}</p>
         <p className="p-line"></p>
+      </div>
+      <div>
+        <LogoScroller/>
       </div>
       <div>
         <SmallAboutUs />

@@ -16,7 +16,7 @@ import ContactMap from "../components/Map";
 function Contact() {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       once: true,
     });
@@ -33,10 +33,10 @@ function Contact() {
       </div>
       <div className="contact-text-f" data-aos="fade-up">
         <div>
-          <h1 className="text-[22px] px-[15px] py-[5px] mb-[5px] bg-gray-400 rounded-2xl">Contact Us</h1>
+          <h1 className="text-[22px] px-[15px] py-[5px] mb-[5px] bg-[rgb(244,115,162)] rounded-2xl text-white">Contact Us</h1>
         </div>
         <div>
-          <p className="text-[25px] md:text-[60px] leading-[32px] md:leading-[80px] font-medium">We’d Love To Hear From You</p>
+          <p className="text-[25px] md:text-[60px] leading-[32px] md:leading-[80px] font-medium">We’d Love To Hear From <span className="text-[rgb(244,115,162)]">You</span></p>
           <p className="text-[18px] leading-[32px] mt-[15px]">
             Your feedback is invaluable to us, and we eagerly await your
             thoughts and insights. Chat to our friendly team.

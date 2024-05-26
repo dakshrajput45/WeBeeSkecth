@@ -34,17 +34,68 @@ body {
   font-weight: 500;
   overflow-x: hidden;
 }
+.text-container {
+  position: relative;
+  display: inline-block; 
+}
 
-@media screen and (max-width: 500px) {
+.text-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 20%; /* Covers half of the height */
+  background: #f473a2; /* Example background color with transparency */
+  z-index: -1; /* Ensures the background is behind the text */
+}
+
+.text-containerr {
+  position: relative;
+  display: inline-block; 
+}
+
+.text-containerr::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20%; /* Covers half of the height */
+  background: #f473a2; /* Example background color with transparency */
+  z-index: -1; /* Ensures the background is behind the text */
+}
+
+.text-containerrr {
+  position: relative;
+  display: inline-block; 
+}
+
+.text-containerrr::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40%; /* Covers half of the height */
+  background: #f473a2; /* Example background color with transparency */
+  z-index: -1; /* Ensures the background is behind the text */
+}
+
+@media screen and (max-width: 768px) {
   .App {
     background-color: var(--alice-blue);
     width: 100%;
+  }
+
+  .text-container::after {
+    bottom: 0;
+    height: 30%;
   }
 }
 .banner {
   display: flex;
   flex-direction: row;
-  background-image: url("https://marketi-html.vercel.app/marketi-demo/assets/images/banner/banner-info.png");
   background-position: left 300px  top 220px;
   width: 100%;
   height: 107vh;
@@ -223,9 +274,9 @@ body {
   border-top: 1px solid var(--dark-blue);
   margin-top: 15px;
   margin-left: 20px;
-  margin-right: 60px;
-  margin-bottom: 80px;
-  width: 65%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 72%;
 }
 
 /*---Digital---*/

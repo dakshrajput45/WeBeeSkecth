@@ -15,7 +15,7 @@ function Footer() {
 
     useEffect(() => {
         Aos.init({
-            duration: 1000, 
+            duration: 1500, 
             easing: 'ease-in-out', 
             once: true,
         });
@@ -34,11 +34,11 @@ function Footer() {
 
     return (
         <footer className="footer" data-aos="fade-up">
-            <div className="footer-logo" data-aos="fade-up">
-                <img src="https://www.webeesketch.com/scale.png" alt="Company Logo" className="w-[55%]"  data-aos="fade-up"/>
+            <div className="footer-logo" >
+                <img src="https://www.webeesketch.com/scale.png" alt="Company Logo" className="w-[55%]" />
                 <p>Optimize your success with our ROI-driven digital marketing agency.</p>
 
-            <div className="footer-social" data-aos="fade-up">
+            <div className="footer-social" >
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/webeesketch">
@@ -58,14 +58,14 @@ function Footer() {
                 </ul>
             </div>
             </div>
-            <div className="footer-links-left" data-aos="fade-up">
+            <div className="footer-links-left" >
                     <p>Company</p>
                     <button onClick={() => navigate("/AboutUs")}>About Us</button>
                     <button onClick={() => navigate("/Services")}>Services</button>
                     <button onClick={() => navigate("/Team")}>Team</button>
                     <button onClick={() => navigate("/Blog")}>Blog</button>
             </div>
-            <div className="footer-links-right" data-aos="fade-up">
+            <div className="footer-links-right" >
                     <p>Support</p>
                     <button onClick={() => navigate("/contact")}>Contact</button>
                     <button>Book a Demo</button>
@@ -73,7 +73,7 @@ function Footer() {
                     <button>Terms & Conditions</button>
                     <button>Cookies</button>
             </div>
-            <div className="footer-newsletter" data-aos="fade-up">
+            <div className="footer-newsletter" >
                 <p>Join Our Newsletter</p>
                 <div className="newsletter-input">
                     <input

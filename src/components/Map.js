@@ -28,7 +28,7 @@ function ContactMap() {
           zoom: 11,            // Zoom level
         }}
         style={{ width: "100%",
-        height: isMobile ? "calc(50vh)" : "calc(110vh)",
+        height: isMobile ? "calc(50vh)" : "calc(60vh)",
         borderRadius: "24px", // Adding border radius to the map container
         border: "2px solid black", // Adding border to the map container
         boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)",

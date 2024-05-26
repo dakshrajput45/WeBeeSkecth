@@ -79,7 +79,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   padding: 60px;
   margin-top:60px;
-  margin-bottom: 100px; 
+  margin-bottom: 60px; 
 }
 
 .map {
@@ -197,9 +197,8 @@ padding: 50px 65px;
 .map-form {
 flex-direction: column;
 justify-content: center;
-align-items: center;
 padding: 10px;
-margin-bottom: 100px;
+margin-bottom: 40px;
 }
 
 .explore-btn-contact {

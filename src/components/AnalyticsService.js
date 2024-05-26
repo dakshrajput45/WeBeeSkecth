@@ -15,7 +15,7 @@ function AnalyticsService() {
 
   useEffect(() => {
     Aos.init({
-        duration: 1000, 
+        duration: 1500, 
         easing: 'ease-in-out', 
         once: true,
     });
@@ -42,13 +42,13 @@ function AnalyticsService() {
     <div className="font-medium" data-aos="fade-up">
       <div >
         <p className="text-[60px] mb-[30px] font-medium leading-[72px]">
-          Discover Your Data's Destiny
+          Discover Your <span className="text-[rgb(244,115,162)]">Data's</span> Destiny
         </p>
         <p className="text-[18px] mb-5 leading-[32px]">
           The Tech side of startups can sometimes be very fluid and contain a
           lot of unknowns. What tech stack to use? Which components might be
-          overkill for now but worth keeping an eye on in the future? How to
-          balance the pace of business features development while keeping the
+          overkill for now but worth keeping an eye on in the future? <span className="text-[rgb(244,115,162)]">How to
+          balance</span> the pace of business features development while keeping the
           quality bar high enough to have a maintainable codebase?
         </p>
         <p className="text-[18px] mb-[55px] leading-[32px]">
@@ -67,7 +67,7 @@ function AnalyticsService() {
       <div>
         <div data-aos="fade-up">
           <p className="text-[28px] mb-[20px] leading-[32px]">
-            Start Shaping the Process
+            Start Shaping the <span className="text-[rgb(244,115,162)]">Process</span>
           </p>
           <p className="text-[18px] mb-[25px] leading-[32px]">
             What we have at the start:
@@ -95,7 +95,7 @@ function AnalyticsService() {
         </div>
         <div>
           <p className="mb-[20px] text-[28px] leading-[32px]">
-            Our Simple Roadmap
+            Our Simple <span className="text-[rgb(244,115,162)]">Roadmap</span>
           </p>
           <p className="mb-[50px] text-[18px] leading-[32px]" data-aos="fade-up">
             Nowadays, the choice of frameworks is really wide, but again, due to
@@ -117,10 +117,10 @@ function AnalyticsService() {
         ))}
       </div>
       <p className="border border-gray-400 mt-[50px] mb-[50px] border-solid"></p>
-      <div className="bg-white shadow-lg mx-auto mb-[60px] p-[15px] border border-solid border-gray-400 rounded-xl">
+      <div className="bg-white shadow-lg mx-auto mb-[60px] p-[15px] border border-solid border-[rgb(244,115,162)] rounded-xl">
         <p className="text-[20px] sm:text-[28px] leading-[32px] mb-8">
           “I am genuinely thrilled by the current fusion of technologies
-          reshaping digital marketing. The integration of data analytics, AI and
+          reshaping digital marketing. The <span>integration of data analytics</span>, AI and
           automation is revolutionizing our approach.”
         </p>
         <div className="flex items-center  mt-[30px]">
@@ -138,7 +138,7 @@ function AnalyticsService() {
         </div>
       </div>
       <div className="leading-[32px]" data-aos="fade-up">
-        <p className="text-[28px] mb-[20px]">How Did We Get Into Terraform?</p>
+        <p className="text-[28px] mb-[20px]">How Did We Get Into <span className="text-[rgb(244,115,162)]">Terraform?</span></p>
         <p className="text-[18px] mb-[20px]">
           The backend, a part of the DB, also should have some object/file
           storage. Sooner or later, we also should have DNS so that our services
@@ -147,7 +147,7 @@ function AnalyticsService() {
         <p className="text-[18px] mb-[20px]">
           The choice of cloud provider was purely based on existing expertise
           within the team. We already use AWS for other projects, so we decided
-          to stick with it. For sure, it is possible to do everything in the AWS
+          to stick with it. For sure, it is increased possible to do everything in the AWS
           console, but as times go, things become a classic big ball of AWS
           console, but as times go, mud that everyone is terrified to touch, and
           no one remembers why this bit exists at all.

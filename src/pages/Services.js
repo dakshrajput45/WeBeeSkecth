@@ -5,6 +5,7 @@ import Aos from "aos";
 import AnalyticsService from "../components/AnalyticsService";
 import FormSection from "../components/FormSection";
 import Footer from "../components/Footer";
+import LogoScroller from "../components/LogoScroller";
 
 function Services() {
   const [service, setService] = useState(AnalyticsService);
@@ -94,7 +95,10 @@ function Services() {
         </div>
         <div>{service}</div>
       </div>
-      <p className="border border-gray-400 mb-8 border-solid mx-[40px] sm:mx-[100px]"></p>
+      <p className="border border-gray-400 mb-8 border-solid mx-[10px] sm:mx-[100px]"></p>
+      <div>
+        <LogoScroller/>
+      </div>
       <div>
         <FormSection />
       </div>

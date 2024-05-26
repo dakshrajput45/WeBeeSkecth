@@ -7,7 +7,7 @@ import "../Css/OurServices.css";
 function OurServicesSections() {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       once: true,
     });
@@ -15,9 +15,9 @@ function OurServicesSections() {
 
   return (
     <div className="our-service" data-aos="fade-up">
-      <div className="text-service" data-aos="fade-up">
+      <div className="text-service" >
         <p className="text-[22px] mb-[5px] font-medium">OUR SERVICES</p>
-        <p className="text-[34px] sm:text-[60px] leading-[55px] mb-[40px] sm:mb-[60px]">Services We're Offering </p>
+        <p className="text-[34px] sm:text-[60px] leading-[55px] mb-[40px] sm:mb-[60px]"><span className="text-[#f473a2]">Services </span> We're Offering </p>
       </div>
       <div className="div-service-e" data-aos="fade-up">
         <p>{"Analytics and Data Insights"}</p>
@@ -34,7 +34,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-f" data-aos="fade-up">
+      <div className="div-service-f" >
         <p>{"Contact Marketing"}</p>
         <div className="div-service-img">
           <img
@@ -48,7 +48,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-a" data-aos="fade-up">
+      <div className="div-service-a" >
         <div>
           <p>{"Search Engine Marketing"}</p>
         </div>
@@ -64,7 +64,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-b" data-aos="fade-up">
+      <div className="div-service-b" >
         <p>{"Social Media Marketing"}</p>
         <div className="div-service-img">
           <img
@@ -78,7 +78,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-c" data-aos="fade-up">
+      <div className="div-service-c">
         <p>{"Pay-Per-Click Advertising"}</p>
         <div className="div-service-img">
           <img

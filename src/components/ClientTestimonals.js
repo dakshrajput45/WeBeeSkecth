@@ -11,7 +11,7 @@ import { useEffect } from "react";
 function ClientTestimonals() {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       once: true,
     });
@@ -32,12 +32,12 @@ function ClientTestimonals() {
   const [hover, setHover] = useState(false);
   return (
     <div className="client-test" data-aos="fade-up">
-      <div className="client-text" data-aos="fade-up">
-        <p className="text-[22px] leading-[32px] mb-[5px]">
+      <div className="client-text" >
+        <p className="text-[22px] leading-[32px] mb-[5px] text-[#f473a2]">
           CLIENTS TESTIMONIAL
         </p>
         <p className="text-[50px] leading-[50px]">
-          Client's Speeches About Marketi
+          Client's  <span className="text-[rgb(244,115,162)]">Speeches</span> About Marketi
         </p>
         <p className="text-[18px] mt-[15px]">
           Our clients share their experiences with Marketi, expressing how our
@@ -63,11 +63,11 @@ function ClientTestimonals() {
           <p>Satisfied clients of Marketi</p>
         </div>
       </div>
-      <div className="card" data-aos="fade-up">
-        <div className="transform-div" data-aos="fade-up">
+      <div className="card">
+        <div className="transform-div" >
           <TestimonalCard TeamData={TeamData[index]} />
         </div>
-        <div className="two-btn-co" data-aos="fade-up">
+        <div className="two-btn-co" >
           <button className="btn" onClick={leftShiftHandler}>
             <FaArrowLeftLong />
           </button>

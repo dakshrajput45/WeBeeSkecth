@@ -7,9 +7,9 @@ function TestimonalCard({ TeamData }) {
     <div className="testi-card" data-aos="fade-up">
       <div className="card-text" data-aos="fade-up">
         <p className="text-[28px] leading-[40px] mb-[40px]">
-          Working With Marketi has been a right and good investment for our
+          Working With <span className="text-[#f473a2]">WeBeeSketch</span> has been a right and good investment for our
           business And Thier target campaigns and
-          data-driven approach have not noly increased our Roi but also provide
+          data-driven approach have not only increased our Roi but also provide
           valuable insights for future growth.
         </p>
       </div>

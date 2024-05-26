@@ -8,34 +8,49 @@ import Form from "./Form";
 function FormSection() {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       once: true,
     });
   }, []);
   const [hover, setHover] = useState(false);
+  
+  const [hovered, setHovered] = useState(false);
   return (
-    <div className="form-sec" data-aos="fade-right">
-      <div className="form-text" data-aos="fade-right">
-        <p>GET STARTED WITH US</p>
-        <p className="highlighted-text" data-aos="fade-right">
-          Start Conversation To Skyrocket Your Business
+    <div className="form-sec" >
+      <div className="form-text" data-aos="zoom-in-down">
+        <p className="text-[rgb(244,115,162)]">GET STARTED WITH US</p>
+        <p data-aos="fade-right">
+          Start Conversation To <span className="text-[#f473a2]">Skyrocket</span> Your Business
         </p>
         <p>
           {
             "Schedule a free consultation with our experts. Uncover opportunities and take the first step towards digital success"
           }
         </p>
-        <button
-          className="explore-btn"
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-        >
-          Contact Us {hover ? <MdArrowForward /> : <MdArrowOutward />}
-        </button>
+        <div className="flex flex-row gap-x-5 items-center">
+          <button
+            className="explore-btn"
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            Contact Us {hover ? <MdArrowForward /> : <MdArrowOutward />}
+          </button>
+          <p>Or</p>
+          <button
+            className="explore-btn"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            Book A Call {hovered ? <MdArrowForward /> : <MdArrowOutward />}
+          </button>
+        </div>
       </div>
-      <div data-aos="fade-left">
-          <Form/>
+      <div data-aos="zoom-in-down">
+        
+      <div className="max-w-400px">
+        <Form />
+      </div>
       </div>
     </div>
   );

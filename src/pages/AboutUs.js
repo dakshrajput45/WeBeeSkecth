@@ -9,6 +9,7 @@ import ClientTestimonals from "../components/ClientTestimonals.js";
 import FormSection from "../components/FormSection.js";
 import Footer from "../components/Footer.js";
 import { useState,useEffect } from "react";
+import LogoScroller from "../components/LogoScroller.js";
 import Aos from "aos";
 
 function AboutUs() {
@@ -18,7 +19,7 @@ function AboutUs() {
 
   useEffect(() => {
     Aos.init({
-        duration: 1000, 
+        duration: 1500, 
         easing: 'ease-in-out', 
         once: true,
     });
@@ -32,10 +33,10 @@ function AboutUs() {
 
       <div className="first-about" data-aos="fade-up">
         <div className="first-about-sec">
-          <p className="text-[20px] px-[15px] py-[5px] mb-[5px] bg-gray-400 w-[140px] rounded-2xl text-white">ABOUT US</p>
+          <p className="text-[20px] px-[15px] py-[5px] mb-[5px] bg-[#f473a2] w-[140px] rounded-2xl text-[white]">ABOUT US</p>
           <p className="text-[32px] leading-[32px] mt-[15px]">
             At Marketi, we understand the critical role that search engine
-            optimization plays in driving online success for businesses of all
+            <span className="text-[rgb(244,115,162)]"> optimization plays</span> in driving online success for businesses of all
             sizes.
           </p>
         </div>
@@ -70,6 +71,9 @@ function AboutUs() {
           </button>
           </div>
         </div>
+      </div>
+      <div>
+        <LogoScroller/>
       </div>
       <div>
         <SmallAboutUs />

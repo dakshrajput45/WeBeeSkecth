@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 function CardDigital({DigitalCardData}) {
     useEffect(() => {
         Aos.init({
-            duration: 1000, 
+            duration: 1500, 
             easing: 'ease-in-out', 
             once: true,
         });

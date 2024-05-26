@@ -19,7 +19,7 @@ function TeamCard({ TeamData }) {
     return (
         <div>
             <div className="four-card-container" data-aos="fade-up">
-                <div className="f-card-team" data-aos="fade-up">
+                <div className="f-card-team" >
                     <PersonalCard Data={TeamData[((index) % len)]} />
                 </div>
                 <div className="s-card-team" data-aos="fade-up">

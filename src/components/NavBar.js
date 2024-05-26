@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../Css/NavBar.css";
 import Aos from "aos";
 import {
@@ -6,10 +6,12 @@ import {
   FaInstagramSquare,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { MdArrowForward } from "react-icons/md";
+import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  
+
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     Aos.init({
@@ -27,7 +29,7 @@ const Navbar = () => {
     setActive(!active);
     setIcon(!icon);
   };
- 
+
 
   useEffect(() => {
     const handleDocumentClick = () => {
@@ -43,12 +45,12 @@ const Navbar = () => {
   }, []);
 
   const handleMenuClick = (e) => {
-    e.stopPropagation(); 
+    e.stopPropagation();
     setActive(false);
     setIcon(false);
   };
 
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const isAtTop = window.pageYOffset === 0;
@@ -181,6 +183,17 @@ const Navbar = () => {
             </div>
           </div>
         </ul>
+        
+        <div className="mr-[30px] hidden md:flex">
+              <Button
+                variant="contained"
+                disableElevation
+                style={{
+                  fontSize: "15px", padding: "8px 16px", backgroundColor: "rgb(0, 33, 65)", color: "white", gap: "5px"}}
+              >
+                Book A Call <MdArrowForward />
+              </Button>
+            </div>
         <div
           onClick={(e) => {
             e.stopPropagation();
