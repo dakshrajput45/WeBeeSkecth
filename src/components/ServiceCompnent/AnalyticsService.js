@@ -1,7 +1,7 @@
 import { SiGoogledocs } from "react-icons/si";
 import { BsFillSendCheckFill } from "react-icons/bs";
 import { FcApproval } from "react-icons/fc";
-import CardService from "../components/CardService";
+import CardService from "../CardService";
 import { useEffect } from "react";
 import Aos from "aos";
 

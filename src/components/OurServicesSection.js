@@ -19,7 +19,7 @@ function OurServicesSections() {
         <p className="text-[22px] mb-[5px] font-medium">OUR SERVICES</p>
         <p className="text-[34px] sm:text-[60px] leading-[55px] mb-[40px] sm:mb-[60px]"><span className="text-[#f473a2]">Services </span> We're Offering </p>
       </div>
-      <div className="div-service-e" data-aos="fade-up">
+      <div className="div-service-e" >
         <p>{"Analytics and Data Insights"}</p>
         <div className="div-service-img">
           <img

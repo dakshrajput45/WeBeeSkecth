@@ -143,9 +143,9 @@ body {
 }
 
 .explore-btn{
-  margin: 15px;
   padding: 8px 14px;
   font-size: 16px;
+  margin-right: 10px;
   color: white;
   background-color: var(--dark-blue);
   border: none;
@@ -161,7 +161,7 @@ body {
 }
 
 .left-ban-text button {
-  margin: 10px;
+  margin-top:10px;
   padding: 8px 16px;
   font-size: 18px;
   color: white;
@@ -177,9 +177,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .explore-btn{
-    margin: 10px;
+    margin-top: 10px;
     padding: 6px 10px;
-    font-size: 12px;
+    font-size: 16px;
     color: white;
     background-color: var(--dark-blue);
     border: none;
@@ -192,9 +192,10 @@ body {
 
   
 .left-ban-text button {
-  margin: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 16px;
   color: white;
   background-color: var(--dark-blue);
   border: none;
@@ -287,7 +288,7 @@ body {
   gap:30px;
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .digi-card img {
@@ -358,7 +359,7 @@ body {
   .process {
     padding: 10px;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
   }
@@ -504,7 +505,7 @@ body {
   padding-bottom: 100px;
 }
 .first-about-sec {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .second-about-sec {
   display: flex;

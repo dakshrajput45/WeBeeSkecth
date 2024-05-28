@@ -15,8 +15,8 @@ function Footer() {
 
     useEffect(() => {
         Aos.init({
-            duration: 1500, 
-            easing: 'ease-in-out', 
+            duration: 1500,
+            easing: 'ease-in-out',
             once: true,
         });
     }, [])
@@ -38,40 +38,48 @@ function Footer() {
                 <img src="https://www.webeesketch.com/scale.png" alt="Company Logo" className="w-[55%]" />
                 <p>Optimize your success with our ROI-driven digital marketing agency.</p>
 
-            <div className="footer-social" >
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/webeesketch">
-                            <FaFacebookSquare />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/webeesketch">
-                            <FaInstagramSquare />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/webeesketch">
-                            <FaLinkedinIn />
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <div className="footer-social" >
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/webeesketch">
+                                <FaFacebookSquare />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/webeesketch">
+                                <FaInstagramSquare />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/webeesketch">
+                                <FaLinkedinIn />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div className="footer-links-left" >
-                    <p>Company</p>
+                <p>Company</p>
+                <div className="flex md:flex-col flex-row">
                     <button onClick={() => navigate("/AboutUs")}>About Us</button>
                     <button onClick={() => navigate("/Services")}>Services</button>
+                </div>
+                <div className="flex md:flex-col flex-row">
                     <button onClick={() => navigate("/Team")}>Team</button>
                     <button onClick={() => navigate("/Blog")}>Blog</button>
+                </div>
             </div>
             <div className="footer-links-right" >
-                    <p>Support</p>
+                <p>Support</p>
+                <div className="flex md:flex-col flex-row">
                     <button onClick={() => navigate("/contact")}>Contact</button>
                     <button>Book a Demo</button>
+                </div>
+                <div className="flex md:flex-col flex-row">
                     <button>Privacy Policy</button>
                     <button>Terms & Conditions</button>
-                    <button>Cookies</button>
+                </div>
+                <button>Cookies</button>
             </div>
             <div className="footer-newsletter" >
                 <p>Join Our Newsletter</p>

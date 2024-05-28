@@ -33,12 +33,7 @@ function AboutUs() {
 
       <div className="first-about" data-aos="fade-up">
         <div className="first-about-sec">
-          <p className="text-[20px] px-[15px] py-[5px] mb-[5px] bg-[#f473a2] w-[140px] rounded-2xl text-[white]">ABOUT US</p>
-          <p className="text-[32px] leading-[32px] mt-[15px]">
-            At Marketi, we understand the critical role that search engine
-            <span className="text-[rgb(244,115,162)]"> optimization plays</span> in driving online success for businesses of all
-            sizes.
-          </p>
+          <p className="text-[20px] px-[15px] py-[5px] bg-[#f473a2] w-[140px] rounded-2xl text-[white]">ABOUT US</p>
         </div>
         <div className="second-about-sec" data-aos="zoom-in">
           <div>

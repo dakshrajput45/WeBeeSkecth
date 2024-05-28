@@ -1,9 +1,11 @@
 .about-ban {
-    background: var(--coral);
+    background: url("../images/aboutusbanner.jpg");
+    background-size: cover; /* Adjust as needed */
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     text-align: center;
     align-items: center;
     height: 70vh;
@@ -23,6 +25,12 @@
 }
 
 @media screen and (max-width:600px) {
+    .about-ban {
+        background:url(../images/aboutusbannermobile.jpg);
+        margin-top: 70px;
+        margin-left:-70px;
+        background-position: start;
+    }
     .about-ban-text {
         padding-left: 0;
         padding-right: 0;

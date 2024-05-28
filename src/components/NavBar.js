@@ -9,9 +9,12 @@ import {
 import { MdArrowForward } from "react-icons/md";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import BasicMenu from "./DropDown";
+import { useContext } from "react";
+import { AppContext } from "../Context/AppContext";
 
 const Navbar = () => {
-
+  const {service,setService} = useContext(AppContext);
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     Aos.init({
@@ -19,17 +22,35 @@ const Navbar = () => {
       easing: "ease-in-out",
       once: true,
     });
+
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setSticky(true);
+      } else {
+        const isAtTop = window.pageYOffset === 0;
+        setSticky(!isAtTop);
+      }
+    };
+
+    handleResize(); // Call initially to set sticky state based on window width
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleResize);
+    };
   }, []);
 
   const navigate = useNavigate();
-  const [active, setActive] = useState(false); // Changed active state to boolean
-  const [icon, setIcon] = useState(false); // Changed icon state to boolean
+  const [active, setActive] = useState(false);
+  const [icon, setIcon] = useState(false);
 
   const navToggle = () => {
     setActive(!active);
     setIcon(!icon);
   };
-
 
   useEffect(() => {
     const handleDocumentClick = () => {
@@ -49,26 +70,10 @@ const Navbar = () => {
     setActive(false);
     setIcon(false);
   };
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isAtTop = window.pageYOffset === 0;
-      setSticky(!isAtTop);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   //console.log(sticky);
   return (
     <nav
       className={sticky ? "nav sticky" : "nav"}
-      data-aos="fade-down"
     >
       <div className={sticky ? "top" : "top-nav"}>
         <div className="info-nav">
@@ -129,16 +134,10 @@ const Navbar = () => {
                 AboutUs
               </button>
             </li>
-            <li className="nav__item">
-              <button
-                onClick={() => {
-                  navigate("/Services");
-                }}
-              >
-                Services
-              </button>
+            <li>
+              <BasicMenu service={service} setService={setService}/>
             </li>
-            <li className="nav__item">
+            <li className="nav__item  ">
               <button
                 onClick={() => {
                   navigate("/Blog");
@@ -161,7 +160,7 @@ const Navbar = () => {
                 <p>+91934732XXXX</p>
                 <p>Emailexample@gmail.com</p>
               </div>
-              <div className="social-media" data-aos="fade-down">
+              <div className="social-media" >
                 <ul className="social-media-desktop">
                   <li>
                     <a href="https://www.facebook.com/webeesketch">
@@ -183,17 +182,18 @@ const Navbar = () => {
             </div>
           </div>
         </ul>
-        
+
         <div className="mr-[30px] hidden md:flex">
-              <Button
-                variant="contained"
-                disableElevation
-                style={{
-                  fontSize: "15px", padding: "8px 16px", backgroundColor: "rgb(0, 33, 65)", color: "white", gap: "5px"}}
-              >
-                Book A Call <MdArrowForward />
-              </Button>
-            </div>
+          <Button
+            variant="contained"
+            disableElevation
+            style={{
+              fontSize: "15px", padding: "8px 16px", backgroundColor: "rgb(0, 33, 65)", color: "white", gap: "5px"
+            }}
+          >
+            Book A Call <MdArrowForward />
+          </Button>
+        </div>
         <div
           onClick={(e) => {
             e.stopPropagation();

@@ -6,7 +6,7 @@ function TestimonalCard({ TeamData }) {
   return (
     <div className="testi-card" data-aos="fade-up">
       <div className="card-text" data-aos="fade-up">
-        <p className="text-[28px] leading-[40px] mb-[40px]">
+        <p className="text-[20px] leading-[32px] md:text-[28px] md:leading-[40px] mb-[20px] md:mb-[40px]">
           Working With <span className="text-[#f473a2]">WeBeeSketch</span> has been a right and good investment for our
           business And Thier target campaigns and
           data-driven approach have not only increased our Roi but also provide
@@ -14,7 +14,7 @@ function TestimonalCard({ TeamData }) {
         </p>
       </div>
       <p className="border border-gray-400 mb-8 mt-8 border-solid"></p>
-      <div className="info-container" data-aos="fade-up">
+      <div className="info-container" >
         <div className="info-second">
           <div className="img-container">
             <img src={TeamData.img} alt="img" />

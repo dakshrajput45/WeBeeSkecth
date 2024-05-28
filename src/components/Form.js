@@ -26,11 +26,11 @@ function Form() {
   };
 
   return (
-    <div className="border-[#f473a2] border-2 p-[20px] shadow-2xl rounded-3xl max-w-[450px] flex flex-col">
+    <div className="border-rgb-0-33-65 border-2 p-[20px] shadow-2xl rounded-3xl max-w-[450px] flex flex-col mt-10 md:mt-0">
       <div>
       <p  className="font-semibold uppercase text-[20px] text-[rgb(244,115,162)] mx-[20px] text-center">Get A Free Consultation With Marketing Our Expert</p>
       </div>
-      <form className="w-[100%] mb-[60px] lg:mb-[20px] "
+      <form className="w-[100%] mb-[20px] lg:mb-[20px] "
         ref={form}
         onSubmit={sendEmail}>
         <div className="relative z-0 w-full mb-5 group">

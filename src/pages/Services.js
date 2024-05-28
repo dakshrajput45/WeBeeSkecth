@@ -1,14 +1,17 @@
 import BannerSection from "../components/BannerSection";
 import BannerData from "../Data/Banner-data";
-import { useState,useEffect } from "react";
+import { useEffect } from "react";
 import Aos from "aos";
-import AnalyticsService from "../components/AnalyticsService";
+import AnalyticsService from "../components/ServiceCompnent/AnalyticsService";
 import FormSection from "../components/FormSection";
 import Footer from "../components/Footer";
 import LogoScroller from "../components/LogoScroller";
+import { useContext } from "react";
+import { AppContext } from "../Context/AppContext";
 
 function Services() {
-  const [service, setService] = useState(AnalyticsService);
+
+  const {service,setService} = useContext(AppContext);
   useEffect(() => {
     Aos.init({
         duration: 1000, 
@@ -16,6 +19,7 @@ function Services() {
         once: true,
     });
 }, [])
+
   return (
     <div>
       <div>

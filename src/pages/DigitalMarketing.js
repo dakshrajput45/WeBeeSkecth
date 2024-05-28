@@ -40,7 +40,7 @@ function DigitalMarketing() {
               higher ROI that propels your
               business to new heights.
             </p>
-            <div>
+            <div className="mt-[10px]">
             <button
                 className="explore-btn"
                 onMouseEnter={() => setHover(true)}
