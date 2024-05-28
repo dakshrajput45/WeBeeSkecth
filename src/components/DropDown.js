@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { styled, alpha,useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -67,7 +66,6 @@ export default function CustomizedMenus(props) {
   };
 
   const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
   return (
     <div>
       <Button
