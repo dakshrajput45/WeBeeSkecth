@@ -5,10 +5,13 @@ export const AppContext = createContext();
 
 export function AppContextProvider({children}) {
     const [service,setService] = useState(<AnalyticsService/>);
+    const [active,setActive] = useState(false);
 
     const value = {
         service,
-        setService
+        setService,
+        active,
+        setActive,
     };
 
     return <AppContext.Provider value={value}>

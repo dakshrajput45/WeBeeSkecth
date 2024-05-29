@@ -86,6 +86,8 @@ function Footer() {
                 <div className="newsletter-input">
                     <input
                         type="email"
+                        name="newsletter"
+                        id="newsletter"
                         onChange={changeHandler}
                         value={email}
                         placeholder="Enter Your Email"

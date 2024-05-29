@@ -15,6 +15,7 @@ import { AppContext } from "../Context/AppContext";
 
 const Navbar = () => {
   const {service,setService} = useContext(AppContext);
+  const {active,setActive} = useContext(AppContext);
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     Aos.init({
@@ -44,7 +45,6 @@ const Navbar = () => {
   }, []);
 
   const navigate = useNavigate();
-  const [active, setActive] = useState(false);
   const [icon, setIcon] = useState(false);
 
   const navToggle = () => {

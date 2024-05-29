@@ -40,8 +40,8 @@ function SmallAboutUs() {
         </div>
       </div>
       <div className="right-aboutus" >
-        <p className="text-[22px] mb-[5px] text-[#f473a2]">{"About Us"}</p>
-        <p className=" text-[34px] sm:text-[45px] leading-[32px] sm:leading-[55px] font-medium" >
+        <p className="text-[22px] mb-[5px] text-[#f473a2] font-medium">{"About Us"}</p>
+        <p className=" text-[34px] sm:text-[47px] leading-[32px] sm:leading-[55px] font-semibold" >
           Why <span className="text-[#f473a2]">Webeesketch</span> Should Be Your Top
           Choice
         </p>

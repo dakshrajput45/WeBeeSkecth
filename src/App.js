@@ -5,14 +5,17 @@ import NavBar from "./components/NavBar";
 import Blog from "./pages/Blog"
 import Contact from "./pages/Contact";
 import { Route, Routes } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "./Context/AppContext";
 
 function App() {
+  const {active} = useContext(AppContext);
   return (
     <div className="App">
       <div>
         <NavBar />
       </div>
-      <div className="App">
+      <div className={`component-body ${active ? 'nav-open' : ''}`}>
         <Routes>
           <Route path="/" element={<DigitalMarketing />} />
           <Route path="/AboutUs" element={<AboutUs />} />

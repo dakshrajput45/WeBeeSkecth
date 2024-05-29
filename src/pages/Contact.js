@@ -22,7 +22,8 @@ function Contact() {
     });
   }, []);
   
-
+  
+  const [hover, setHover] = useState(false);
   const [hovered, setHovered] = useState(false);
 
 
@@ -94,20 +95,20 @@ function Contact() {
           </p>
         </div>
         <div className="contact-btn">
-          <Button
-            variant="contained"
-            disableElevation
-            className="get-start-btn"
-            style={{ fontSize: "12px", padding:"5px 10px"}}
+        <button
+            className="explore-btn"
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
           >
-            Get Started
-          </Button>
+            Contact Us {hover ? <MdArrowForward /> : <MdArrowOutward />}
+          </button>
+          <p className="mr-[10px] text-[18px]">Or</p>
           <button
-            className="explore-btn-contact"
+            className="explore-btn"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
           >
-            Submit {hovered ? <MdArrowForward /> : <MdArrowOutward />}
+            Book A Call {hovered ? <MdArrowForward /> : <MdArrowOutward />}
           </button>
         </div>
       </div>

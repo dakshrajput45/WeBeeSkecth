@@ -92,6 +92,15 @@ body {
     bottom: 0;
     height: 30%;
   }
+
+  .component-body {
+    transition: filter 1s ease-in, opacity 0.5s ease; /* Optional for smooth transition */
+  }
+  
+  .component-body.nav-open {
+    filter: blur(5px);
+    opacity: 0.5;
+  }
 }
 .banner {
   display: flex;

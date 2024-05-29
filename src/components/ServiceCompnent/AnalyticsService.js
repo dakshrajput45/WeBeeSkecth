@@ -117,7 +117,7 @@ function AnalyticsService() {
         ))}
       </div>
       <p className="border border-gray-400 mt-[50px] mb-[50px] border-solid"></p>
-      <div className="bg-white shadow-lg mx-auto mb-[60px] p-[15px] border border-solid border-[rgb(244,115,162)] rounded-xl">
+      <div className="bg-white shadow-lg mx-auto mb-[60px] p-[15px] border-2 border-solid border-rgb-0-33-65 rounded-xl">
         <p className="text-[20px] sm:text-[28px] leading-[32px] mb-8">
           “I am genuinely thrilled by the current fusion of technologies
           reshaping digital marketing. The <span>integration of data analytics</span>, AI and

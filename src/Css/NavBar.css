@@ -23,7 +23,7 @@ a {
   width: 100%;
   z-index: 2;
   flex-direction: column;
-  height: 14vh;
+  height: 17vh;
 }
 
 
@@ -161,12 +161,14 @@ a {
     border: none;
     margin-right: 0px;
     color: white;
-    background-color: rgb(5, 22, 40);
+    background-color: var(--dark-blue);
     font-size: 20px;
     width:75vw;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
     text-align: start;
+  }
+
+  .nav__item button:hover {
+    background-color: rgb(5, 22, 40);
   }
 
   .social-media-desktop {
@@ -184,11 +186,13 @@ a {
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: rgb(5, 22, 40);
+    background-color: var(--dark-blue);
     width: 75vw;
     margin-top: 60px;
-    border-top: 2px solid white;
-    border-bottom: 3px solid white;
+  }
+
+  .info-contain:hover {
+    background-color: rgb(5, 22, 40);
   }
 
   .info-nav {

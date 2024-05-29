@@ -28,7 +28,7 @@ function FormSection() {
             "Schedule a free consultation with our experts. Uncover opportunities and take the first step towards digital success"
           }
         </p>
-        <div className="flex flex-row gap-x-5 items-center">
+        <div className="flex flex-row gap-x-5 items-center mt-[15px]">
           <button
             className="explore-btn"
             onMouseEnter={() => setHover(true)}

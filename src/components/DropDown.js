@@ -60,9 +60,7 @@ export default function CustomizedMenus(props) {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = (e) => {
-    e.stopPropagation();
     setAnchorEl(null);
-    console.log(e.target.value);
   };
 
   const theme = useTheme();
@@ -94,9 +92,7 @@ export default function CustomizedMenus(props) {
                 justifyContent: 'flex-start',
                 color:'white',
                 borderRadius:'0px',
-                borderTop:'3px solid white',
-                borderBottom:'3px solid white',
-                bgcolor: 'rgb(5, 22, 40)'
+                bgcolor: 'rgb(0, 33, 65)'
             }, 
           }}
           
