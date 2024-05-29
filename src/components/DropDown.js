@@ -84,7 +84,7 @@ export default function CustomizedMenus(props) {
             '&:hover': {
                 bgcolor: 'transparent', // Change background color on hover
               },
-              [theme.breakpoints.down('lg')]: { // Apply styles for small screens
+              [theme.breakpoints.down('md')]: { // Apply styles for small screens
                 fontSize: '20px',
                 width: '75vw',
                 textAlign: 'start',

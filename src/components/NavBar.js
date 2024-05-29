@@ -63,7 +63,7 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("click", handleDocumentClick);
     };
-  }, []);
+  }, [setActive]);
 
   const handleMenuClick = (e) => {
     e.stopPropagation();
