@@ -5,7 +5,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AnalyticsService from './ServiceCompnent/AnalyticsService';
-import ContentMarketing from './ServiceCompnent/ContentMarketing';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../Context/AppContext';
 
@@ -122,7 +121,7 @@ export default function CustomizedMenus(props) {
         Analytics and Data Insights
         </MenuItem>
         <MenuItem onClick={(e)=>{
-          setService(<ContentMarketing/>);
+          setService(<AnalyticsService/>);
           navigate("/Services");
           handleClose(e);
         }} disableRipple

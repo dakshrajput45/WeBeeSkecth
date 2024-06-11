@@ -138,7 +138,7 @@ function AnalyticsService() {
         </div>
       </div>
       <div className="leading-[32px]" data-aos="fade-up">
-        <p className="text-[28px] mb-[20px]">How Did We Get Into <span className="text-[rgb(244,115,162)]">Terraform?</span></p>
+        <p className="text-[28px] mb-[20px]">How Did We Get Into <span className="text-[rgb(244,115,162)]">Terraform<span onClick={()=>{}}>?</span></span></p>
         <p className="text-[18px] mb-[20px]">
           The backend, a part of the DB, also should have some object/file
           storage. Sooner or later, we also should have DNS so that our services

@@ -190,6 +190,7 @@ const Navbar = () => {
             style={{
               fontSize: "15px", padding: "8px 16px", backgroundColor: "rgb(0, 33, 65)", color: "white", gap: "5px"
             }}
+            onClick={()=>{navigate("/contact")}}
           >
             Book A Call <MdArrowForward />
           </Button>

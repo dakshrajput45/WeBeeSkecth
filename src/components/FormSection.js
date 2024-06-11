@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { MdArrowOutward, MdArrowForward } from "react-icons/md";
 import "../Css/FormSection.css";
 import Aos from "aos";
@@ -6,6 +7,7 @@ import "aos/dist/aos.css";
 import Form from "./Form";
 
 function FormSection() {
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -33,6 +35,7 @@ function FormSection() {
             className="explore-btn"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
+            onClick={()=>{navigate("/contact")}}
           >
             Contact Us {hover ? <MdArrowForward /> : <MdArrowOutward />}
           </button>
@@ -41,6 +44,7 @@ function FormSection() {
             className="explore-btn"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
+            onClick={()=>{navigate("/contact")}}
           >
             Book A Call {hovered ? <MdArrowForward /> : <MdArrowOutward />}
           </button>

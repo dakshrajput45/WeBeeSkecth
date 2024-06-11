@@ -1,10 +1,12 @@
 import { PiArrowRightLight } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "../Css/OurServices.css";
 
 function OurServicesSections() {
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -19,7 +21,7 @@ function OurServicesSections() {
         <p className="text-[22px] mb-[5px] font-medium">OUR SERVICES</p>
         <p className="text-[34px] sm:text-[60px] leading-[55px] mb-[40px] sm:mb-[60px]"><span className="text-[#f473a2]">Services </span> We're Offering </p>
       </div>
-      <div className="div-service-e" >
+      <div className="div-service-e" onClick={()=>{navigate("/Services")}}>
         <p>{"Analytics and Data Insights"}</p>
         <div className="div-service-img">
           <img
@@ -34,7 +36,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-f" >
+      <div className="div-service-f" onClick={()=>{navigate("/Services")}}>
         <p>{"Contact Marketing"}</p>
         <div className="div-service-img">
           <img
@@ -48,7 +50,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-a" >
+      <div className="div-service-a" onClick={()=>{navigate("/Services")}}>
         <div>
           <p>{"Search Engine Marketing"}</p>
         </div>
@@ -64,7 +66,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-b" >
+      <div className="div-service-b" onClick={()=>{navigate("/Services")}}>
         <p>{"Social Media Marketing"}</p>
         <div className="div-service-img">
           <img
@@ -78,7 +80,7 @@ function OurServicesSections() {
         </div>
       </div>
       <p className="p-our-line"></p>
-      <div className="div-service-c">
+      <div className="div-service-c" onClick={()=>{navigate("/Services")}}>
         <p>{"Pay-Per-Click Advertising"}</p>
         <div className="div-service-img">
           <img

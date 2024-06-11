@@ -10,10 +10,12 @@ import FrequentAnswer from "../components/FrequentAnswers";
 import FormSection from "../components/FormSection";
 import Footer from "../components/Footer";
 import { useState,useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Aos from "aos";
 import LogoScroller from "../components/LogoScroller";
 
 function DigitalMarketing() {
+  const navigate = useNavigate();
   const [hovered, setHovered] = useState(false);
   const [hover, setHover] = useState(false);
   useEffect(() => {
@@ -51,6 +53,7 @@ function DigitalMarketing() {
               <button
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
+                onClick={()=>{navigate("/AboutUs")}}
               >
                 Explore More {hovered ? <MdArrowForward /> : <MdArrowOutward />}
               </button>
