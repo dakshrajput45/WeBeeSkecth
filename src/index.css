@@ -524,6 +524,13 @@ body {
   gap:20px;
 }
 
+@media screen and (min-width:1250px) {
+  .second-about-sec {
+    display: flex;
+    gap:50px;
+  }
+}
+
 .second-about-sec button{
   margin: 5px;
   padding: 10px 20px;
