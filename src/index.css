@@ -521,6 +521,7 @@ body {
 }
 .second-about-sec {
   display: flex;
+  gap:20px;
 }
 
 .second-about-sec button{
