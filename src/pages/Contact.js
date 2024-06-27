@@ -20,8 +20,8 @@ function Contact() {
       once: true,
     });
   }, []);
-  
-  
+
+
   const [hover, setHover] = useState(false);
   const [hovered, setHovered] = useState(false);
 
@@ -75,13 +75,11 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="map-form">
-        <div className="w-[100%] lg:w-[60%] border-slate-400 rounded-[24px] border mb-[60px] lg:mb-[10px]" data-aos="zoom-in" >
+      <div className="flex lg:flex-row flex-col p-[10px] py-[40px] lg:p-[60px] justify-between gap-[40px]">
+        <div className="w-[100%]">
           <ContactMap />
         </div>
-        <div data-aos="fade-up">
-          <Form />
-        </div>
+        <Form />
       </div>
       <div>
         <FrequentAnswer />
@@ -94,7 +92,7 @@ function Contact() {
           </p>
         </div>
         <div className="contact-btn">
-        <button
+          <button
             className="explore-btn"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
