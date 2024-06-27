@@ -35,7 +35,6 @@ function ContactMap() {
          }}
         mapStyle="https://api.maptiler.com/maps/streets/style.json?key=MpuwlHBgS2vYorjOXbNc"
       >
-        <NavigationControl position="top-left" />
         <Marker longitude={77.2090}
         latitude={28.6139}
         color={'black'}
