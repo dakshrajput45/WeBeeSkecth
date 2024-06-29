@@ -28,9 +28,6 @@ function TeamCard({ TeamData }) {
                 <div className="t-card-team" data-aos="fade-up">
                     <PersonalCard Data={TeamData[(index + 2) % len]} />
                 </div>
-                <div className="l-card-team"data-aos="fade-up">
-                    <PersonalCard Data={TeamData[(index + 3) % len]} />
-                </div>
             </div>
             <div className="two-btn-container" data-aos="fade-up">
                 <button className="btn" onClick={leftShiftHandler}>

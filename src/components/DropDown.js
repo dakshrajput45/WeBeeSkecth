@@ -161,6 +161,26 @@ export default function CustomizedMenus(props) {
         }}>
           Pay-Per-Click Advertising
         </MenuItem>
+        <MenuItem onClick={(e)=>{
+          setService(<AnalyticsService/>);
+          navigate("/Services");
+          handleClose(e);
+        }} disableRipple
+        sx={{
+            fontSize:'15px',
+        }}>
+          Web Development
+        </MenuItem>
+        <MenuItem onClick={(e)=>{
+          setService(<AnalyticsService/>);
+          navigate("/Services");
+          handleClose(e);
+        }} disableRipple
+        sx={{
+            fontSize:'15px',
+        }}>
+          App Development
+        </MenuItem>
       </StyledMenu>
     </div>
   );

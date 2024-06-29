@@ -6,6 +6,7 @@ import AnalyticsService from "../components/ServiceCompnent/AnalyticsService";
 import FormSection from "../components/FormSection";
 import Footer from "../components/Footer";
 import LogoScroller from "../components/LogoScroller";
+import FrequentAnswer from "../components/FrequentAnswers";
 import { useContext } from "react";
 import { AppContext } from "../Context/AppContext";
 
@@ -98,6 +99,9 @@ function Services() {
           </div>
         </div>
         <div>{service}</div>
+      </div>
+      <div>
+        <FrequentAnswer/>
       </div>
       <p className="border border-gray-400 mb-8 border-solid mx-[10px] sm:mx-[100px]"></p>
       <div>

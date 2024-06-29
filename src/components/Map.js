@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react";
-import Map, { NavigationControl , Marker} from "react-map-gl";
+import Map, {Marker} from "react-map-gl";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -23,8 +23,8 @@ function ContactMap() {
       <Map
         mapLib={maplibregl}
         initialViewState={{
-          longitude: 77.2090, // Longitude for Delhi, India
-          latitude: 28.6139,  // Latitude for Delhi, India
+          longitude: 77.37633299574375, // Longitude for Delhi, India
+          latitude: 28.62965067249685,  // Latitude for Delhi, India
           zoom: 11,            // Zoom level
         }}
         style={{ width: "100%",
@@ -35,8 +35,8 @@ function ContactMap() {
          }}
         mapStyle="https://api.maptiler.com/maps/streets/style.json?key=MpuwlHBgS2vYorjOXbNc"
       >
-        <Marker longitude={77.2090}
-        latitude={28.6139}
+        <Marker longitude={77.37633299574375}
+        latitude={28.62965067249685}
         color={'black'}
         />
       </Map>

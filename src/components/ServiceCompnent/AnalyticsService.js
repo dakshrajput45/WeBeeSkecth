@@ -1,17 +1,16 @@
-import { SiGoogledocs } from "react-icons/si";
-import { BsFillSendCheckFill } from "react-icons/bs";
-import { FcApproval } from "react-icons/fc";
-import CardService from "../CardService";
+// import { SiGoogledocs } from "react-icons/si";
+// import { BsFillSendCheckFill } from "react-icons/bs";
+// import { FcApproval } from "react-icons/fc";
 import { useEffect } from "react";
 import Aos from "aos";
 
 function AnalyticsService() {
-  const points = [
-    "- Less than a dozen developers - inHouse team and temporary contractors who want to and can work asynchronously",
-    "- Completely greenfield project - no single line of code has been written yet. Requirements are vague, but they already started shaping into something",
-    "- Tech-wise - the clear need for a backend that should talk with mobile clients",
-    "- Some simple web frontend - static pages should be enough! (nope)",
-  ];
+  // const points = [
+  //   "- Less than a dozen developers - inHouse team and temporary contractors who want to and can work asynchronously",
+  //   "- Completely greenfield project - no single line of code has been written yet. Requirements are vague, but they already started shaping into something",
+  //   "- Tech-wise - the clear need for a backend that should talk with mobile clients",
+  //   "- Some simple web frontend - static pages should be enough! (nope)",
+  // ];
 
   useEffect(() => {
     Aos.init({
@@ -21,23 +20,23 @@ function AnalyticsService() {
     });
 }, [])
 
-  const cardServices = [
-    {
-      icon: <SiGoogledocs />,
-      title: "Collect Doc",
-      text: "We collect required documents and send them for check",
-    },
-    {
-      icon: <BsFillSendCheckFill />,
-      title: "Check & Finalize",
-      text: "We check the document and send it for final approval",
-    },
-    {
-      icon: <FcApproval />,
-      title: "Approve",
-      text: "After approval, you'll be ready to use your software",
-    },
-  ];
+  // const cardServices = [
+  //   {
+  //     icon: <SiGoogledocs />,
+  //     title: "Collect Doc",
+  //     text: "We collect required documents and send them for check",
+  //   },
+  //   {
+  //     icon: <BsFillSendCheckFill />,
+  //     title: "Check & Finalize",
+  //     text: "We check the document and send it for final approval",
+  //   },
+  //   {
+  //     icon: <FcApproval />,
+  //     title: "Approve",
+  //     text: "After approval, you'll be ready to use your software",
+  //   },
+  // ];
   return (
     <div className="font-medium" data-aos="fade-up">
       <div >
@@ -64,7 +63,7 @@ function AnalyticsService() {
           className="mb-[60px]"
         />
       </div>
-      <div>
+      {/* <div>
         <div data-aos="fade-up">
           <p className="text-[28px] mb-[20px] leading-[32px]">
             Start Shaping the <span className="text-[rgb(244,115,162)]">Process</span>
@@ -157,7 +156,7 @@ function AnalyticsService() {
           promising one chosen by features, supported languages, and, in the
           case of providers, pricing.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

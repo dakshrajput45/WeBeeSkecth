@@ -426,12 +426,7 @@ body {
   padding: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-.l-card-team {
-  background-color: var(--alice-blue);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+
 .two-btn-container {
   display: flex;
   flex-direction: row;
@@ -473,9 +468,6 @@ body {
     display: none;
   }
 
-  .l-card-team {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -492,19 +484,11 @@ body {
     display: none;
   }
 
-  .l-card-team {
-    display: none;
-  }
 
   .data-card {
     display: flex;
     flex-direction: column;
     gap:20px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .l-card-team {
-    display: none;
   }
 }
 /**********************ABOUTUS***************/

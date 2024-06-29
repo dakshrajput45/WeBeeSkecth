@@ -6,7 +6,8 @@ const TeamData=[
         facebook: "",
         instagram:"",
         linkedin:"",
-        whatsapp:""
+        whatsapp:"",
+        gmail:""
     },
     {
         img: "https://marketi-html.vercel.app/marketi-demo/assets/images/team/team-image4.png",
@@ -15,7 +16,8 @@ const TeamData=[
         facebook: "",
         instagram:"",
         linkedin:"",
-        whatsapp:""
+        whatsapp:"",
+        gmail:""
     },
     {
         img: "https://marketi-html.vercel.app/marketi-demo/assets/images/team/team-image1.png",
@@ -24,17 +26,9 @@ const TeamData=[
         facebook: "",
         instagram:"",
         linkedin:"",
-        whatsapp:""
+        whatsapp:"",
+        gmail:""
     },
-    {
-        img: "https://marketi-html.vercel.app/marketi-demo/assets/images/team/team-image2.png",
-        name: "pqr",
-        job:"Nodejs",
-        facebook: "",
-        instagram:"",
-        linkedin:"",
-        whatsapp:""
-    }
 ];
 
 export default TeamData;
