@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 import Aos from "aos";
 import LogoScroller from "../components/LogoScroller";
 
-function DigitalMarketing() {
+function DigitalWebeeKetchng() {
   const navigate = useNavigate();
   const [hovered, setHovered] = useState(false);
   const [hover, setHover] = useState(false);
@@ -35,9 +35,9 @@ function DigitalMarketing() {
             <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">The Digital</p>
               <span><img src="https://marketi-html.vercel.app/marketi-demo/assets/images/banner/banner-tittle-star.png" alt="img" /></span>
             </div >
-              <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">Marketing Agency For <span className="text-[#f473a2]">Higher ROI.</span></p>
+              <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">WebeeSketch Agency For <span className="text-[#f473a2]">Higher ROI.</span></p>
             <p className="text-[18px] mt-[50px]">
-              Choose success with our digital marketing agency, dedicated to
+              Choose success with our digital WebeeSketch agency, dedicated to
               delivering
               higher ROI that propels your
               business to new heights.
@@ -116,4 +116,4 @@ function DigitalMarketing() {
     </div>
   );
 }
-export default DigitalMarketing;
+export default DigitalWebeeKetchng;

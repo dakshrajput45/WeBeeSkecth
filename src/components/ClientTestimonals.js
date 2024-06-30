@@ -37,10 +37,10 @@ function ClientTestimonals() {
           CLIENTS TESTIMONIAL
         </p>
         <p className="text-[50px] leading-[50px]">
-          Client's  <span className="text-[rgb(244,115,162)]">Speeches</span> About Marketi
+          Client's  <span className="text-[rgb(244,115,162)]">Speeches</span> About WebeeSketch
         </p>
         <p className="text-[18px] mt-[15px]">
-          Our clients share their experiences with Marketi, expressing how our
+          Our clients share their experiences with WebeeSketch, expressing how our
           digital marketing expertise has not only met but
           exceeded their expectations, fostering success and growth for their
           businesses.
@@ -60,7 +60,7 @@ function ClientTestimonals() {
             src="https://marketi-html.vercel.app/marketi-demo/assets/images/testimonial/user.png"
             alt="img"
           />
-          <p>Satisfied clients of Marketi</p>
+          <p>Satisfied clients of WebeeSketch</p>
         </div>
       </div>
       <div className="card">

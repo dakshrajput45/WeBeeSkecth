@@ -12,9 +12,9 @@ function SmallAboutUs() {
       once: true,
     });
 
-    animateValue("experience", 30, 12, 2000, "+");
-    animateValue("projects", 30, 10, 2000, "k");
-    animateValue("customers", 30, 5, 2000, "k");
+    animateValue("experience", 30, 14, 2000, "+");
+    animateValue("projects", 30, 5, 2000, "k");
+    animateValue("customers", 30, 4, 2000, "k");
   });
 
   function animateValue(id, start, end, duration, symbol) {
@@ -42,11 +42,11 @@ function SmallAboutUs() {
       <div className="right-aboutus" >
         <p className="text-[22px] mb-[5px] text-[#f473a2] font-medium">{"About Us"}</p>
         <p className=" text-[34px] sm:text-[47px] leading-[32px] sm:leading-[55px] font-semibold" >
-          Why <span className="text-[#f473a2]">Webeesketch</span> Should Be Your Top
+          Why <span className="text-[#f473a2]">WebeeSketch</span> Should Be Your Top
           Choice
         </p>
         <p className="text-[18px] leading-[32px] mt-[15px]">
-          Choose Marketi for unparalleled digital{" "}
+          Choose WebeeSktech for unparalleled digital{" "}
           success-where expertise,innovation, 
           and strategic brilliance converge to elevate your business to new
           heights.
@@ -54,15 +54,15 @@ function SmallAboutUs() {
 
         <div className="card-aboutus" >
           <div>
-            <p id="experience" className="text-[48px] mb-[10px]">12</p>
+            <p id="experience" className="text-[48px] mb-[10px]">14</p>
             <p>Years of experience</p>
           </div>
           <div>
-            <p id="projects" className="text-[48px] mb-[10px]">10</p>
+            <p id="projects" className="text-[48px] mb-[10px]">5</p>
             <p>Completed Projects</p>
           </div>
           <div>
-            <p id="customers" className="text-[48px] mb-[10px]">5</p>
+            <p id="customers" className="text-[48px] mb-[10px]">4</p>
             <p>Trusted Customers</p>
           </div>
         </div>
