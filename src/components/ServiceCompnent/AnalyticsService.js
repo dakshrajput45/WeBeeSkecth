@@ -41,19 +41,18 @@ function AnalyticsService() {
     <div className="font-medium" data-aos="fade-up">
       <div >
         <p className="text-[60px] mb-[30px] font-medium leading-[72px]">
-          Discover Your <span className="text-[rgb(244,115,162)]">Data's</span> Destiny
+          <span className="text-[rgb(244,115,162)]">Analytics</span> and Data Insights
         </p>
         <p className="text-[18px] mb-5 leading-[32px]">
-          The Tech side of startups can sometimes be very fluid and contain a
-          lot of unknowns. What tech stack to use? Which components might be
-          overkill for now but worth keeping an eye on in the future? <span className="text-[rgb(244,115,162)]">How to
-          balance</span> the pace of business features development while keeping the
-          quality bar high enough to have a maintainable codebase?
+        Unlock the potential of your business with our advanced analytics and data insights solutions.
+         Our team harnesses cutting-edge tools and methodologies to transform raw data into actionable intelligence.
         </p>
         <p className="text-[18px] mb-[55px] leading-[32px]">
-          Here I want to share our experience building from the ground up — how
-          we shaped our processes based on needs and how our processes how we
-          shaped our evolved as we extended our tech stack with new components.
+        Identifying market and customer trends early allows us to stay ahead of the curve and adapt swiftly to changing demands. 
+        By optimizing operations, we can improve efficiency and reduce costs, ensuring our processes are as streamlined and cost-effective 
+        as possible. This enhanced efficiency supports our strategic goals, enabling us to make informed, data-driven decisions that bolster 
+        our overall strategy. Consequently, these efforts drive growth by uncovering new opportunities for expansion, ensuring our sustained 
+        success in the market.
         </p>
       </div>
       <div>

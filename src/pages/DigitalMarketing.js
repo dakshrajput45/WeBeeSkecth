@@ -32,10 +32,10 @@ function DigitalWebeeKetchng() {
         <div className="left-ban" data-aos="fade-up">
           <div className="left-ban-text">
             <div className="flex flex-row items-center">
-            <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">The Digital</p>
+            <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px] tracking-wide">The Performance</p>
               <span><img src="https://marketi-html.vercel.app/marketi-demo/assets/images/banner/banner-tittle-star.png" alt="img" /></span>
             </div >
-              <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">WebeeSketch Agency For <span className="text-[#f473a2]">Higher ROI.</span></p>
+              <p className="font-medium leading-[40px] md:leading-[80px] text-[32px] md:text-[54px]">Marketing Agency For <span className="text-[#f473a2]">Higher ROI.</span></p>
             <p className="text-[18px] mt-[50px]">
               Choose success with our digital WebeeSketch agency, dedicated to
               delivering

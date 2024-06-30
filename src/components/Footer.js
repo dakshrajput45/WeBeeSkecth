@@ -10,6 +10,7 @@ import "../Css/Footer.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import img from '../images/scale-removebg-preview.png';
 
 function Footer() {
 
@@ -35,7 +36,7 @@ function Footer() {
     return (
         <footer className="footer" data-aos="fade-up">
             <div className="footer-logo" >
-                <img src="https://www.webeesketch.com/scale.png" alt="Company Logo" className="w-[55%]" />
+                <img src={img} alt="Company Logo" className="w-[55%]" />
                 <p>Optimize your success with our ROI-driven digital marketing agency.</p>
 
                 <div className="footer-social" >

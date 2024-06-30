@@ -77,8 +77,8 @@ const Navbar = () => {
     >
       <div className={sticky ? "top" : "top-nav"}>
         <div className="info-nav">
-          <p>+91 934732XXXX</p>
-          <p>Emailexample@gmail.com</p>
+          <p>+91 99589 95724</p>
+          <p>connect@webeesketch.com</p>
         </div>
         <div className="social-media">
           <ul className="social-media-desktop">
@@ -190,7 +190,7 @@ const Navbar = () => {
             style={{
               fontSize: "15px", padding: "8px 16px", backgroundColor: "rgb(0, 33, 65)", color: "white", gap: "5px"
             }}
-            onClick={()=>{navigate("/contact")}}
+            onClick={()=>{"https://calendly.com/webeesketch/30min"}}
           >
             Book A Call <MdArrowForward />
           </Button>
