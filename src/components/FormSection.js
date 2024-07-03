@@ -44,7 +44,7 @@ function FormSection() {
             className="explore-btn"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-            onClick={()=>{navigate("/contact")}}
+            onClick={()=>{window.location.href = ' https://calendly.com/webeesketch/30min';}}
           >
             Book A Call {hovered ? <MdArrowForward /> : <MdArrowOutward />}
           </button>

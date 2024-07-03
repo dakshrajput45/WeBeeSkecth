@@ -50,8 +50,9 @@ function ClientTestimonals() {
             className="explore-btn"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
+            onClick={()=>{window.location.href = ' https://calendly.com/webeesketch/30min';}}
           >
-            Try It Now {hover ? <MdArrowForward /> : <MdArrowOutward />}
+            Book A Call {hover ? <MdArrowForward /> : <MdArrowOutward />}
           </button>
         </div>
         <p className="border border-gray-400 mb-8 border-solid"></p>

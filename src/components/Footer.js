@@ -66,7 +66,6 @@ function Footer() {
                     <button onClick={() => navigate("/Services")}>Services</button>
                 </div>
                 <div className="flex md:flex-col flex-row">
-                    <button onClick={() => navigate("/Team")}>Team</button>
                     <button onClick={() => navigate("/Blog")}>Blog</button>
                 </div>
             </div>

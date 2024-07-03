@@ -47,8 +47,9 @@ function DigitalWebeeKetchng() {
                 className="explore-btn"
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
+                onClick={()=>{window.location.href = ' https://calendly.com/webeesketch/30min';}}
               >
-                Try It Now {hover ? <MdArrowForward /> : <MdArrowOutward />}
+                Book A Call {hover ? <MdArrowForward /> : <MdArrowOutward />}
               </button>
               <button
                 onMouseEnter={() => setHovered(true)}
@@ -105,11 +106,9 @@ function DigitalWebeeKetchng() {
       <div>
         <FrequentAnswer />
       </div>
-
       <div>
         <FormSection />
       </div>
-
       <div>
         <Footer />
       </div>
