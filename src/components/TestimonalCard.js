@@ -20,8 +20,8 @@ function TestimonalCard({ TeamData }) {
             <img src={TeamData.img} alt="img" />
           </div>
           <div className="info-container-text">
-            <p className="text-[26px]">{TeamData.name}</p>
-            <p className="text-[16px]">{TeamData.job}</p>
+            <p className="text-[18px] md:text-[26px]">{TeamData.name}</p>
+            <p className="text-[14px] md:text-[16px]">{TeamData.job}</p>
           </div>
         </div>
         <div className="stars">

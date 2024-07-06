@@ -16,12 +16,12 @@ function PersonalCard({ Data }) {
             <div className="flex flex-row w-[50%] justify-around absolute text-[32px] bg-slate-50 bg-opacity-80 bottom-[90px] left-[70px] py-[6px] rounded-md
             opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                 <li>
-                    <a href="https://www.linkedin.com/company/webeesketch">
+                    <a href={Data.linkedin}>
                         <FaLinkedinIn className="text-[#f473a2]"/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/webeesketch">
+                    <a href={Data.gmail}>
                         <BiLogoGmail className="text-[#f473a2]"/> 
                     </a>
                 </li>
