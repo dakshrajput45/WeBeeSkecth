@@ -13,8 +13,8 @@ function Form() {
     e.preventDefault();
     
     emailjs
-      .sendForm("service_vgmzl06", "template_4o6wbt4", form.current, {
-        publicKey: "ppnLEMR1WF__rbxPP",
+      .sendForm("service_ux9ogvh", "template_e7ljdji", form.current, {
+        publicKey: "N9E_Zk1woNIElWAfX",
       })
       .then(
         () => {

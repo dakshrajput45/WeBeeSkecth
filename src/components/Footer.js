@@ -10,7 +10,7 @@ import "../Css/Footer.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import img from '../images/scale-removebg-preview.png';
+import img from '../images/logo/1.png';
 
 function Footer() {
 
@@ -36,7 +36,7 @@ function Footer() {
     return (
         <footer className="footer" data-aos="fade-up">
             <div className="footer-logo" >
-                <img src={img} alt="Company Logo" className="w-[55%]" />
+                <img src={img} alt="Company Logo" className="mr-[170px]" />
                 <p>Optimize your success with our ROI-driven digital marketing agency.</p>
 
                 <div className="footer-social" >
@@ -63,7 +63,7 @@ function Footer() {
                 <p>Company</p>
                 <div className="flex md:flex-col flex-row">
                     <button onClick={() => navigate("/AboutUs")}>About Us</button>
-                    <button onClick={() => navigate("/Services")}>Services</button>
+                    <button onClick={() => navigate("/analytics-and-data-insights")}>Services</button>
                 </div>
                 <div className="flex md:flex-col flex-row">
                     <button onClick={() => navigate("/Blog")}>Blog</button>
@@ -73,13 +73,12 @@ function Footer() {
                 <p>Support</p>
                 <div className="flex md:flex-col flex-row">
                     <button onClick={() => navigate("/contact")}>Contact</button>
-                    <button>Book a Demo</button>
+                    <button>Book a Call</button>
                 </div>
                 <div className="flex md:flex-col flex-row">
-                    <button>Privacy Policy</button>
-                    <button>Terms & Conditions</button>
+                    <button onClick={() => navigate("/privacy-policy")}>Privacy Policy</button>
+                    <button onClick={() => navigate("/terms-and-conditions")}>Terms & Conditions</button>
                 </div>
-                <button>Cookies</button>
             </div>
             <div className="footer-newsletter" >
                 <p>Join Our Newsletter</p>

@@ -12,9 +12,9 @@ import { useNavigate } from "react-router-dom";
 import BasicMenu from "./DropDown";
 import { useContext } from "react";
 import { AppContext } from "../Context/AppContext";
+import logo from "../images/logo/2.png"
 
 const Navbar = () => {
-  const {service,setService} = useContext(AppContext);
   const {active,setActive} = useContext(AppContext);
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -103,7 +103,7 @@ const Navbar = () => {
       <div className="nav__brand" data-aos="fade-down">
         <div className="logo">
           <img
-            src="https://www.webeesketch.com/scale.png"
+            src={logo}
             className="w-[55%] ml-5"
             alt="logo"
             onClick={() => {
@@ -135,7 +135,7 @@ const Navbar = () => {
               </button>
             </li>
             <li>
-              <BasicMenu service={service} setService={setService}/>
+              <BasicMenu />
             </li>
             <li className="nav__item  ">
               <button

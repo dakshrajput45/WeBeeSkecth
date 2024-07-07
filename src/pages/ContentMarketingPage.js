@@ -1,8 +1,8 @@
-function ContentMarketing(){
+function ContentMarketingPage(){
     return(
         <div>
             Content
         </div>
     );
 }
-export default ContentMarketing;
+export default ContentMarketingPage;

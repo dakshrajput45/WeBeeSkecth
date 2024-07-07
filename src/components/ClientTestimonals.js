@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TeamData from "../Data/TeamData";
+import ClientData from "../Data/ClientData";
 import TestimonalCard from "./TestimonalCard";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { MdArrowOutward, MdArrowForward } from "react-icons/md";
@@ -18,7 +18,7 @@ function ClientTestimonals() {
   }, []);
 
   const [index, setIndex] = useState(0);
-  const len = TeamData.length;
+  const len = ClientData.length;
   function leftShiftHandler() {
     if (index === 0) setIndex(len - 1);
     else setIndex(index - 1);
@@ -66,7 +66,7 @@ function ClientTestimonals() {
       </div>
       <div className="card">
         <div className="transform-div" >
-          <TestimonalCard TeamData={TeamData[index]} />
+          <TestimonalCard TeamData={ClientData[index]} />
         </div>
         <div className="two-btn-co" >
           <button className="btn" onClick={leftShiftHandler}>

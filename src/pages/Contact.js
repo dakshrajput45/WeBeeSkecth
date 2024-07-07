@@ -51,7 +51,7 @@ function Contact() {
           <div>
             <p className="text-[24px] leading-[32px] font-medium">Chat to support</p>
             <p className="text-[18px] leading-[32px] text-gray-500">Speak to our friendly team.</p>
-            <p className="text-[18px] leading-[32px] mt-[15px]">support@marketi.test</p>
+            <p className="text-[18px] leading-[32px] mt-[15px]">Connect@webeesketch.com</p>
           </div>
         </div>
         <div className="contact-card-s">
@@ -60,8 +60,8 @@ function Contact() {
           </div>
           <div>
             <p className="text-[24px] leading-[32px] font-medium">Visit us</p>
-            <p className="text-[18px] leading-[32px] text-gray-500">Visit our office HQ.</p>
-            <p className="text-[18px] leading-[32px] mt-[15px]">456 Elm Avenue, Cityville, State 67890</p>
+            <p className="text-[18px] leading-[32px] text-gray-500">Visit our office</p>
+            <p className="text-[18px] leading-[32px] mt-[15px]">H-23, Noida Sec-63,Noida-201301</p>
           </div>
         </div>
         <div className="contact-card-t">
@@ -71,7 +71,7 @@ function Contact() {
           <div>
             <p className="text-[24px] leading-[32px] font-medium">Call us</p>
             <p className="text-[18px] leading-[32px] text-gray-500">Mon-Fri from 8am to 5pm.</p>
-            <p className="text-[18px] leading-[32px] mt-[15px]">+91 283922XXXX</p>
+            <p className="text-[18px] leading-[32px] mt-[15px]">+91 99589 95724</p>
           </div>
         </div>
       </div>

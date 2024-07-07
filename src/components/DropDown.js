@@ -4,9 +4,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import AnalyticsService from './ServiceCompnent/AnalyticsService';
 import { useNavigate } from 'react-router-dom';
-import { AppContext } from '../Context/AppContext';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -51,7 +49,6 @@ const StyledMenu = styled((props) => (
 
 export default function CustomizedMenus(props) {
   const navigate = useNavigate();
-  const {setService} = React.useContext(AppContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -110,8 +107,7 @@ export default function CustomizedMenus(props) {
       >
         <MenuItem 
         onClick={(e)=>{
-          setService(<AnalyticsService/>);
-          navigate("/Services");
+          navigate("/analytics-and-data-insights");
           handleClose(e);
         }} disableRipple
         sx={{
@@ -121,8 +117,7 @@ export default function CustomizedMenus(props) {
         Analytics and Data Insights
         </MenuItem>
         <MenuItem onClick={(e)=>{
-          setService(<AnalyticsService/>);
-          navigate("/Services");
+          navigate("/analytics-and-data-insights");
           handleClose(e);
         }} disableRipple
         sx={{
@@ -131,8 +126,7 @@ export default function CustomizedMenus(props) {
           Content Marketing
         </MenuItem>
         <MenuItem onClick={(e)=>{
-          setService(<AnalyticsService/>);
-          navigate("/Services");
+          navigate("/analytics-and-data-insights");
           handleClose(e);
         }} disableRipple
         sx={{
@@ -141,8 +135,7 @@ export default function CustomizedMenus(props) {
           Search Engine Marketing
         </MenuItem>
         <MenuItem onClick={(e)=>{
-          setService(<AnalyticsService/>);
-          navigate("/Services");
+          navigate("/analytics-and-data-insights");
           handleClose(e);
         }} disableRipple
         sx={{
@@ -152,8 +145,7 @@ export default function CustomizedMenus(props) {
           Social Media Marketing
         </MenuItem>
         <MenuItem onClick={(e)=>{
-          setService(<AnalyticsService/>);
-          navigate("/Services");
+          navigate("/analytics-and-data-insights");
           handleClose(e);
         }} disableRipple
         sx={{
@@ -162,8 +154,7 @@ export default function CustomizedMenus(props) {
           Pay-Per-Click Advertising
         </MenuItem>
         <MenuItem onClick={(e)=>{
-          setService(<AnalyticsService/>);
-          navigate("/Services");
+          navigate("/analytics-and-data-insights");
           handleClose(e);
         }} disableRipple
         sx={{
@@ -172,8 +163,7 @@ export default function CustomizedMenus(props) {
           Web Development
         </MenuItem>
         <MenuItem onClick={(e)=>{
-          setService(<AnalyticsService/>);
-          navigate("/Services");
+          navigate("/analytics-and-data-insights");
           handleClose(e);
         }} disableRipple
         sx={{
